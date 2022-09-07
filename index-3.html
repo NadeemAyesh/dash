@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <title>CORK Admin - Multipurpose Bootstrap Dashboard Template </title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <link href="assets/css/loader.css" rel="stylesheet" type="text/css" />
+    <script src="assets/js/loader.js"></script>
+
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&amp;display=swap" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/plugins.css" rel="stylesheet" type="text/css" />
+    <!-- END GLOBAL MANDATORY STYLES -->
+
+    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM STYLES -->
+    <link href="plugins/apex/apexcharts.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/dashboard/dash_2.css" rel="stylesheet" type="text/css" />
+    <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
+    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM STYLES -->
+    <link href="assets/css/scrollspyNav.css" rel="stylesheet" type="text/css" />
+    <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
+    <style>
+        .apexcharts-canvas {
+            margin: 0 auto;
+        }
+
+        .apexcharts-title-text {
+            fill: #e0e6ed;
+        }
+        .apexcharts-yaxis-label {
+            fill: #e0e6ed;
+        }
+        .apexcharts-xaxis-label {
+            fill: #e0e6ed;
+        }
+        .apexcharts-legend-text {
+            color: #e0e6ed!important;
+        }
+        .apexcharts-radialbar-track.apexcharts-track .apexcharts-radialbar-area {
+            stroke: #191e3a;
+        }
+        .apexcharts-pie-label, .apexcharts-datalabel, .apexcharts-datalabel-label, .apexcharts-datalabel-value {
+            fill: #bfc9d4;
+        }
+    </style>
+
+    <link rel="stylesheet" href="plugins/font-icons/fontawesome/css/regular.css">
+    <link rel="stylesheet" href="plugins/font-icons/fontawesome/css/fontawesome.css">
+
+    <style>
+        .feather-icon .icon-section {
+            padding: 30px;
+        }
+        .feather-icon .icon-section h4 {
+            color: #bfc9d4;
+            font-size: 17px;
+            font-weight: 600;
+            margin: 0;
+            margin-bottom: 16px;
+        }
+        .feather-icon .icon-content-container {
+            padding: 0 16px;
+            width: 86%;
+            margin: 0 auto;
+            border: 1px solid #191e3a;
+            border-radius: 6px;
+        }
+        .feather-icon .icon-section p.fs-text {
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+        }
+        .feather-icon .icon-container { cursor: pointer; }
+        .feather-icon .icon-container svg {
+            color: #bfc9d4;
+            margin-right: 6px;
+            vertical-align: middle;
+            width: 20px;
+            height: 20px;
+            fill: rgba(0, 23, 55, 0.08);
+        }
+        .feather-icon .icon-container:hover svg {
+            color: #888ea8;
+        }
+        .feather-icon .icon-container span { display: none; }
+        .feather-icon .icon-container:hover span { color: #888ea8; }
+        .feather-icon .icon-link {
+            color: #888ea8;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+
+        /*FAB*/
+        .fontawesome .icon-section {
+            padding: 30px;
+        }
+        .fontawesome .icon-section h4 {
+            color: #bfc9d4;
+            font-size: 17px;
+            font-weight: 600;
+            margin: 0;
+            margin-bottom: 16px;
+        }
+        .fontawesome .icon-content-container {
+            padding: 0 16px;
+            width: 86%;
+            margin: 0 auto;
+            border: 1px solid #191e3a;
+            border-radius: 6px;
+        }
+        .fontawesome .icon-section p.fs-text {
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+        }
+        .fontawesome .icon-container { cursor: pointer; }
+        .fontawesome .icon-container i {
+            font-size: 20px;
+            color: #bfc9d4;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        .fontawesome .icon-container:hover i { color: #888ea8; }
+        .fontawesome .icon-container span { color: #888ea8; display: none; }
+        .fontawesome .icon-container:hover span { color: #888ea8; }
+        .fontawesome .icon-link {
+            color: #888ea8;
+            font-weight: 600;
+            font-size: 14px;
+        }
+    </style>
+
+</head>
+
+<body class="alt-menu sidebar-noneoverflow">
+    <!-- BEGIN LOADER -->
+    <div id="load_screen">
+        <div class="loader">
+            <div class="loader-content">
+                <div class="spinner-grow align-self-center"></div>
+            </div>
+        </div>
+    </div>
+    <!--  END LOADER -->
+
+    <!--  BEGIN MAIN CONTAINER  -->
+    <div class="main-container" id="container">
+
+        <div class="overlay"></div>
+        <div class="search-overlay"></div>
+
+        <!--  BEGIN TOPBAR  -->
+        <div class="topbar-nav header navbar" role="banner">
+            <nav id="topbar">
+                <ul class="list-unstyled menu-categories justify-content-center" id="topAccordion">
+
+                    <li class="menu single-menu active">
+                        <a href="#dashboard" data-toggle="collapse" aria-expanded="true"
+                            class="dropdown-toggle autodroprown">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M23.5 7c.276 0 .5.224.5.5v.511c0 .793-.926.989-1.616.989l-1.086-2h2.202zm-1.441 3.506c.639 1.186.946 2.252.946 3.666 0 1.37-.397 2.533-1.005 3.981v1.847c0 .552-.448 1-1 1h-1.5c-.552 0-1-.448-1-1v-1h-13v1c0 .552-.448 1-1 1h-1.5c-.552 0-1-.448-1-1v-1.847c-.608-1.448-1.005-2.611-1.005-3.981 0-1.414.307-2.48.946-3.666.829-1.537 1.851-3.453 2.93-5.252.828-1.382 1.262-1.707 2.278-1.889 1.532-.275 2.918-.365 4.851-.365s3.319.09 4.851.365c1.016.182 1.45.507 2.278 1.889 1.079 1.799 2.101 3.715 2.93 5.252zm-16.059 2.994c0-.828-.672-1.5-1.5-1.5s-1.5.672-1.5 1.5.672 1.5 1.5 1.5 1.5-.672 1.5-1.5zm10 1c0-.276-.224-.5-.5-.5h-7c-.276 0-.5.224-.5.5s.224.5.5.5h7c.276 0 .5-.224.5-.5zm2.941-5.527s-.74-1.826-1.631-3.142c-.202-.298-.515-.502-.869-.566-1.511-.272-2.835-.359-4.441-.359s-2.93.087-4.441.359c-.354.063-.667.267-.869.566-.891 1.315-1.631 3.142-1.631 3.142 1.64.313 4.309.497 6.941.497s5.301-.184 6.941-.497zm2.059 4.527c0-.828-.672-1.5-1.5-1.5s-1.5.672-1.5 1.5.672 1.5 1.5 1.5 1.5-.672 1.5-1.5zm-18.298-6.5h-2.202c-.276 0-.5.224-.5.5v.511c0 .793.926.989 1.616.989l1.086-2z"/></svg>
+                                <span>Cars</span>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-chevron-down">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="menu single-menu">
+                        <a href="#dashboard" data-toggle="collapse" aria-expanded="true"
+                            class="dropdown-toggle autodroprown">
+                            <div class="">
+                                <i class="far fa-chart-bar fa-2x"></i>
+                                <span>Energy</span>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-chevron-down">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="menu single-menu">
+                        <a href="#dashboard" data-toggle="collapse" aria-expanded="true"
+                            class="dropdown-toggle autodroprown">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                                <span>Assets</span>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-chevron-down">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!--  END TOPBAR  -->
+
+        <!--  BEGIN CONTENT PART  -->
+        <div id="content" class="main-content">
+            <div class="layout-px-spacing container-fluid">
+
+                <div class="page-header">
+                    <div class="page-title">
+                        <h3>Analytics Dashboard</h3>
+                    </div>
+                    <div class="dropdown filter custom-dropdown-icon">
+                        <a class="dropdown-toggle btn" href="#" role="button" id="filterDropdown" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"><span class="text"><span>Show</span> : Daily
+                                Analytics</span> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg></a>
+
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="filterDropdown">
+                            <a class="dropdown-item" data-value="<span>Show</span> : Daily Analytics"
+                                href="javascript:void(0);">Daily Analytics</a>
+                            <a class="dropdown-item" data-value="<span>Show</span> : Weekly Analytics"
+                                href="javascript:void(0);">Weekly Analytics</a>
+                            <a class="dropdown-item" data-value="<span>Show</span> : Monthly Analytics"
+                                href="javascript:void(0);">Monthly Analytics</a>
+                            <a class="dropdown-item" data-value="Download All" href="javascript:void(0);">Download
+                                All</a>
+                            <a class="dropdown-item" data-value="Share Statistics" href="javascript:void(0);">Share
+                                Statistics</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row layout-top-spacing ">
+                    <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-12">
+                        <div class="widget-content widget-content-area mb-3">
+                          <div id="radial-chart" class="h-300"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-9 col-lg-8 col-md-8 col-sm-8 col-12">
+                      <div class="widget-content widget-content-area mb-3">
+                        <table class="table"> 
+                          <tr>
+                            <td>
+                              Building 4
+                            </td>
+                            <td>
+                              <p>Fault Type</p>
+                              <ul class="nav">
+                                <li>15</li>
+                                <li>20</li>
+                                <li>30</li>
+                              </ul>
+                            </td>
+                            <td>
+                              <p>Building Capacity</p>
+                              <div class="progress mb-2">
+                                  <div class="progress-bar bg-gradient-primary" role="progressbar" style="width: 57%" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                              <div class="progress">
+                                  <div class="progress-bar bg-gradient-primary" role="progressbar" style="width: 57%" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </td>
+                            <td>
+                              <div id="radial-chart"></div>
+                            </td>
+                          </tr>
+                        </table>  
+                      </div>
+                    </div>
+                </div>
+
+                <div class="footer-wrapper">
+                    <div class="footer-section f-section-1">
+                        <p class="">Copyright © 2022,
+                            All rights reserved.</p>
+                    </div>
+                    <div class="footer-section f-section-2">
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--  END CONTENT PART  -->
+
+    </div>
+    <!-- END MAIN CONTAINER -->
+
+    <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
+    <script src="assets/js/libs/jquery-3.1.1.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script>
+        $(document).ready(function () {
+            App.init();
+        });
+    </script>
+    <script src="assets/js/custom.js"></script>
+    <!-- END GLOBAL MANDATORY SCRIPTS -->
+
+    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+    <script src="plugins/apex/apexcharts.min.js"></script>
+    <script src="assets/js/dashboard/dash_2.js"></script>
+    <!-- <script src="assets/js/scrollspyNav.js"></script> -->
+    <script src="plugins/apex/custom-apexcharts.js"></script>
+    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+    <script>
+       
+       var options = {
+          series: [{
+          name: "SAMPLE A",
+          data: [
+          [16.4, 5.4], [21.7, 2], [25.4, 3], [19, 2], [10.9, 1], [13.6, 3.2], [10.9, 7.4], [10.9, 0], [10.9, 8.2], [16.4, 0], ]
+        },{
+          name: "SAMPLE B",
+          data: [
+          [36.4, 13.4], [1.7, 11], [5.4, 8], [9, 17], [1.9, 4], [3.6, 12.2], [1.9, 14.4], [1.9, 9], [1.9, 13.2], [1.4, 7],  ]
+        },{
+          name: "SAMPLE C",
+          data: [
+          [21.7, 3], [23.6, 3.5], [24.6, 3], [29.9, 3], [21.7, 20], [23, 2], [10.9, 3], [28, 4], [27.1, 0.3], [16.4, 4], [13.6, 0], ]
+        }],
+          chart: {
+          height: 350,
+          type: 'scatter',
+          zoom: {
+            enabled: true,
+            type: 'xy'
+          }
+        },
+        xaxis: {
+          tickAmount: 10,
+          labels: {
+            formatter: function(val) {
+              return parseFloat(val).toFixed(1)
+            }
+          }
+        },
+        yaxis: {
+          tickAmount: 7
+        }
+    };
+
+        var chart = new ApexCharts(document.querySelector("#bubble-chart"), options);
+        chart.render();
+      
+      // area charts
+        var options1 = {
+          series: [{
+          name: 'series1',
+          data: [31, 40, 28, 51, 42, 109, 100]
+        }, {
+          name: 'series2',
+          data: [11, 32, 45, 32, 34, 52, 41]
+        }],
+          chart: {
+          height: 350,
+          type: 'area'
+        },
+        dataLabels: {
+          enabled: false
+        },
+        stroke: {
+          curve: 'smooth'
+        },
+        xaxis: {
+          type: 'datetime',
+          categories: ["2018-09-19T00:00:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"]
+        },
+        tooltip: {
+          x: {
+            format: 'dd/MM/yy HH:mm'
+          },
+        },
+        };
+
+        var chart1 = new ApexCharts(document.querySelector("#chart-area"), options1);
+        chart1.render();
+
+        // line dotted chart
+        var options2 = {
+          series: [{
+            name: "Desktops",
+            data: [10, 41, 35, 51, 49, 62, 69, 91, 148]
+        }],
+          chart: {
+          height: 350,
+          type: 'line',
+          zoom: {
+            enabled: false
+          }
+        },
+        dataLabels: {
+          enabled: false
+        },
+        stroke: {
+          curve: 'straight'
+        },
+        title: {
+          text: 'Product Trends by Month',
+          align: 'left'
+        },
+        grid: {
+          row: {
+            colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
+            opacity: 0.5
+          },
+        },
+        xaxis: {
+          categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
+        }
+        };
+
+        var chart2 = new ApexCharts(document.querySelector("#chart-line-dotted"), options2);
+        chart2.render();
+
+        var optionsStacked = {
+          series: [{
+          name: 'PRODUCT A',
+          data: [44, 55, 41, 67, 22, 43]
+        }, {
+          name: 'PRODUCT B',
+          data: [13, 23, 20, 8, 13, 27]
+        }, {
+          name: 'PRODUCT C',
+          data: [11, 17, 15, 15, 21, 14]
+        }, {
+          name: 'PRODUCT D',
+          data: [21, 7, 25, 13, 22, 8]
+        }],
+          chart: {
+          type: 'bar',
+          height: 350,
+          stacked: true,
+          toolbar: {
+            show: true
+          },
+          zoom: {
+            enabled: true
+          }
+        },
+        responsive: [{
+          breakpoint: 480,
+          options: {
+            legend: {
+              position: 'bottom',
+              offsetX: -10,
+              offsetY: 0
+            }
+          }
+        }],
+        plotOptions: {
+          bar: {
+            horizontal: false,
+            borderRadius: 10
+          },
+        },
+        xaxis: {
+          type: 'datetime',
+          categories: ['01/01/2011 GMT', '01/02/2011 GMT', '01/03/2011 GMT', '01/04/2011 GMT',
+            '01/05/2011 GMT', '01/06/2011 GMT'
+          ],
+        },
+        /* legend: {
+          position: 'right',
+          offsetY: 40
+        }, */
+        fill: {
+          opacity: 1
+        }
+        };
+
+        var chartStacked = new ApexCharts(document.querySelector("#chart-stacked"), optionsStacked);
+        chartStacked.render();
+
+        oprionStacked2 = {
+          series: [{
+          data: [44, 55, 41, 64, 22, 43, 21]
+        }, {
+          data: [53, 32, 33, 52, 13, 44, 32]
+        }],
+          chart: {
+          type: 'bar',
+          height: 430
+        },
+        plotOptions: {
+          bar: {
+            horizontal: true,
+            dataLabels: {
+              position: 'top',
+            },
+          }
+        },
+        dataLabels: {
+          enabled: true,
+          offsetX: -6,
+          style: {
+            fontSize: '12px',
+            colors: ['#fff']
+          }
+        },
+        stroke: {
+          show: true,
+          width: 1,
+          colors: ['#fff']
+        },
+        tooltip: {
+          shared: true,
+          intersect: false
+        },
+        xaxis: {
+          categories: [2001, 2002, 2003, 2004, 2005, 2006, 2007],
+        },
+        };
+
+        var chartStacked2 = new ApexCharts(document.querySelector("#chart-stacked2"), oprionStacked2);
+        chartStacked2.render();
+
+        var chartStacked222 = new ApexCharts(document.querySelector("#chart-stacked222"), oprionStacked2);
+        chartStacked222.render();
+
+        var chartStacked2 = new ApexCharts(document.querySelector("#chart-stacked2-2"), oprionStacked2);
+        chartStacked2.render();
+
+        
+        var optionsPie = {
+          series: [44, 55, 13, 43, 22],
+          chart: {
+          width: 380,
+          type: 'pie',
+        },
+        labels: ['Team A', 'Team B', 'Team C', 'Team D', 'Team E'],
+        responsive: [{
+          breakpoint: 480,
+          options: {
+            chart: {
+              width: 200
+            },
+            legend: {
+              position: 'bottom'
+            }
+          }
+        }]
+        };
+
+        var chartPie = new ApexCharts(document.querySelector("#chart-pie"), optionsPie);
+        chartPie.render();
+      
+        var options = {
+          series: [76],
+          chart: {
+          type: 'radialBar',
+          offsetY: -20,
+          sparkline: {
+            enabled: true
+          }
+        },
+        plotOptions: {
+          radialBar: {
+            startAngle: -90,
+            endAngle: 90,
+            track: {
+              background: "#e7e7e7",
+              strokeWidth: '97%',
+              margin: 5, // margin is in pixels
+              dropShadow: {
+                enabled: true,
+                top: 2,
+                left: 0,
+                color: '#999',
+                opacity: 1,
+                blur: 2
+              }
+            },
+            dataLabels: {
+              name: {
+                show: false
+              },
+              value: {
+                offsetY: -2,
+                fontSize: '22px'
+              }
+            }
+          }
+        },
+        grid: {
+          padding: {
+            top: -10
+          }
+        },
+        fill: {
+          type: 'gradient',
+          gradient: {
+            shade: 'light',
+            shadeIntensity: 0.4,
+            inverseColors: false,
+            opacityFrom: 1,
+            opacityTo: 1,
+            stops: [0, 50, 53, 91]
+          },
+        },
+        labels: ['Average Results'],
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+    
+    </script>
+
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList"></script>
+
+    <script src="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/build/ol.js"></script>
+
+    <script>
+
+        var map = new ol.Map({
+            target: 'map',
+            layers: [
+            new ol.layer.Tile({
+                source: new ol.source.OSM()
+            })
+            ],
+            view: new ol.View({
+            center: ol.proj.fromLonLat([-93.17, 44.95]),
+            zoom: 12
+            })
+        });
+    </script>
+
+</body>
+</html>
