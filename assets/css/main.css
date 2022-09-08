@@ -1904,6 +1904,7 @@ table .badge-info, table .badge-secondary, table .badge-dark  {
 .car-type-list li img {
     height: 25px;
     filter: brightness(0) invert(1);
+    margin-right: 7px;
 }
 
 .widget-card-four .w-info h6 {
@@ -2161,4 +2162,8 @@ table .badge-info, table .badge-secondary, table .badge-dark  {
 
 .bubble.hashtag {
     cursor: pointer;
+}
+
+.widget-card-four .w-info h6 {
+    font-weight: bold !important;
 }

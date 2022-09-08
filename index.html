@@ -355,16 +355,16 @@
 										<div class="text-center">
 											<ul class="nav humi-nave">
 												<li class="nav-item">
-													<i class="bi bi-thermometer-sun"></i> 20 <sup>c</sup>
+													<i class="bi bi-thermometer-sun"></i> 40 <sup>c</sup>
 												</li>
 												<li class="nav-item">
-													<i class="bi bi-wind"></i> 25 <sub>µg/m³</sub>
+													<i class="bi bi-wind"></i> 13 <sub>µg/m³</sub>
 												</li>
 												<li class="nav-item">
-													<i class="bi bi-thermometer-snow"></i> 15 <sub>lx</sub>
+													<i class="bi bi-thermometer-snow"></i> 67 <sub>%</sub>
 												</li>
 												<li class="nav-item">
-													<i class="bi bi-cloud-sun"></i> 150 <sub>hPa
+													<i class="bi bi-cloud-sun"></i>  29.59 <sub>Hg
 													</sub>
 												</li>
 											</ul>
@@ -640,7 +640,7 @@
 		var options2 = {
 			series: [{
 				name: "Desktops",
-				data: [10, 41, 200, 51, 320, 300, 500, 1000]
+				data: [10, 41, 200, 20000, 320, 300, 500, 1000]
 			}],
 			chart: {
 				height: 300,
@@ -674,9 +674,10 @@
 		chart2.render();
 
 		var optionsStacked = {
+			colors : ['#e83e8c', '#4576b5'],
 			series: [{
 				name: 'Petrol Cars',
-				data: [44, 55, 41, 67, 22, 43]
+				data: [44, 55, 41, 67, 22, 43],
 			}, {
 				name: 'EV cars',
 				data: [13, 23, 20, 8, 13, 27]
@@ -724,8 +725,9 @@
 			  offsetY: 40
 			}, */
 			fill: {
-				opacity: 1
-			}
+				opacity: 1,
+			},
+			
 		};
 
 		var chartStacked = new ApexCharts(document.querySelector("#chart-stacked"), optionsStacked);
