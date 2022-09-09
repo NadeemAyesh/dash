@@ -569,7 +569,7 @@
 										<!-- <img src="assets/img/map.png" alt="" class="img-fluid"
 											style="object-fit: cover; width: 100%; height: 100%; object-position: bottom;" /> -->
 											<video muted loop autoplay style="width: 100%; height: 100%; object-fit: fill;">
-												<source src="assets/videos/MAIN_render.mov" type="video/mp4" />
+												<source src="assets/videos/map-city.mp4" type="video/mp4" />
 											</video>
 									</figure>
 									<ul class="d-flex list-unstyled legend-ul justify-content-center mt-3">
@@ -659,9 +659,7 @@
 		//Bar Chart
 		var options = {
 			series: [{
-				data: [44, 55, 41, 64, 22, 43, 21]
-			}, {
-				data: [53, 32, 33, 52, 13, 44, 32]
+				data: [3, 2, 5, 7, 3,]
 			}],
 			chart: {
 				type: 'bar',
@@ -697,7 +695,7 @@
 				intersect: false
 			},
 			xaxis: {
-				categories: [2001, 2002, 2003, 2004, 2005, 2006, 2007],
+				categories: ['Building 01', 'Building 02', 'Building 03', 'Building 04', 'Building 05'],
 			},
 		};
 
@@ -707,9 +705,7 @@
 		
 		var options22 = {
 			series: [{
-				data: [44, 55, 41, 64, 22, 43, 21]
-			}, {
-				data: [53, 32, 33, 52, 13, 44, 32]
+				data: [0.84, .54, 1.4, 1.96, 0.84,]
 			}],
 			chart: {
 				type: 'bar',
@@ -745,7 +741,7 @@
 				intersect: false
 			},
 			xaxis: {
-				categories: [2001, 2002, 2003, 2004, 2005, 2006, 2007],
+				categories: ['Building 01', 'Building 02', 'Building 03', 'Building 04', 'Building 05'],
 			},
 		};
 
@@ -898,7 +894,7 @@
 
 		var optionsPie = {
 			series: [{
-				data: [400, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380]
+				data: [25, 14, 8, 4, 2,]
 			}],
 			chart: {
 				type: 'bar',
@@ -914,7 +910,7 @@
 				enabled: false
 			},
 			xaxis: {
-				categories: ['Chillers (25 mWh)', 'FAHU (25 mWh)', 'Package Unites (25 mWh)', 'Bimps (25 mWh)', 'CCU (25 mWh)'
+				categories: ['Chillers (mWh)', 'FAHU (mWh)', 'Package Unites (mWh)', 'Bimps (mWh)', 'CCU (mWh)'
 				],
 			}
 		};
