@@ -505,8 +505,8 @@
 										<img src="assets/img/Screenshot_4.png" alt="" class="img-fluid"
 											style="" />
 											<ul class="d-flex list-unstyled legend-ul justify-content-center mt-3">
-												<li><span class="" style="background-color: rgb(28 0 239 / 73%);"></span> Car Foot print / Day</li>
-										<li><span class="" style="background-color: rgb(80 131 255 / 73%);"></span> Car Foot Accumulations</li>
+												<li><span class="" style="background-color: rgb(80 131 255 / 73%);"></span> Car Foot print / Day</li>
+										<li><span class="" style="background-color: rgb(28 0 239 / 73%);"></span> Car Foot Accumulations</li>
 												<li><span class="bg-success"></span> Car Entered</li>
 												<li><span class="bg-warning"></span> Car left</li>
 											</ul>
@@ -623,10 +623,10 @@
 		var options1 = {
 			series: [{
 				name: 'Carbon',
-				data: [31, 40, 28, 51, 42, 109, 100]
+				data: [51, 52, 45, 51, 42, 35, 31]
 			}, {
 				name: 'EU',
-				data: [11, 32, 95, 32, 34, 52, 41]
+				data: [45, 45, 45, 45, 45, 45, 45]
 			}],
 			chart: {
 				height: 300,
@@ -884,7 +884,7 @@
 			chart: {
 				type: "area",
 				height: 170,
-				background: "#19191E",
+				background: "transparent",
 				dropShadow: {
 					enabled: true,
 					color: "#000"
@@ -983,9 +983,6 @@
 			legend: {
 				horizontalAlign: "left"
 			},
-			theme: {
-				mode: "dark"
-			}
 		};
 
 		var chartoptionsAreaGradiend = new ApexCharts(document.querySelector("#chart-optionsAreaGradiend"), optionsAreaGradiend);

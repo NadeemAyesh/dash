@@ -780,12 +780,12 @@
 			series: [
 				{
 					data: [10, 20, 15, 30, 35, 30, 45, 59, 30, 35, 25, 29, 15]
-				},
+				}
 			],
 			chart: {
 				type: "area",
-				height: 200,
-				background: "#19191E",
+				height: 170,
+				background: "transparent",
 				dropShadow: {
 					enabled: true,
 					color: "#000"
@@ -838,14 +838,24 @@
 				type: "gradient",
 				gradient: {
 					shadeIntensity: 1,
-					type: "horizontal",
+					type: "vertical",
 					colorStops: [
 						[
 							{
 								offset: 0,
-								color: "green",
+								color: "#F48116",
 								opacity: 1.0
 							},
+							{
+								offset: 70,
+								color: "#6510F8",
+								opacity: 0.2
+							},
+							{
+								offset: 97,
+								color: "#6510F8",
+								opacity: 0.0
+							}
 						]
 					]
 				}
@@ -874,9 +884,6 @@
 			legend: {
 				horizontalAlign: "left"
 			},
-			theme: {
-				mode: "dark"
-			}
 		};
 
 		var chartoptionsAreaGradiend = new ApexCharts(document.querySelector("#chart-optionsAreaGradiend"), optionsAreaGradiend);

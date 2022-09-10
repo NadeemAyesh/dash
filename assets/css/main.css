@@ -2213,7 +2213,7 @@ body.light-mode {
     box-shadow: none !important;
 }
 
-.light-mode #clock, time,
+.light-mode #clock, .light-mode time,
 .light-mode .topbar-nav.header nav#topbar ul.menu-categories li.menu a > div span {
     color: #0e1726;
 }
@@ -2236,4 +2236,8 @@ body.light-mode {
 
 .light-mode .text-white {
     color: #060818 !important;
+}
+
+.light-mode .map-img ul {
+    background-color: #FFF;
 }
