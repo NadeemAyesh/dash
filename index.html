@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-	<title>Vehicles Carbon Footprint</title>
+	<title>مؤسسة قطر | Qatar Foundation</title>
 	<link rel="apple-touch-icon" sizes="144x144" href="assets/img/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
@@ -216,7 +216,7 @@
 								class="dropdown-toggle autodroprown">
 								<div class="">
 									<i class="bi bi-truck-front"></i>
-									<span>Cars</span>
+									<span>Vehicles Carbon Footprint</span>
 								</div>
 								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
 									fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -236,9 +236,29 @@
 							</a>
 						</li>
 					</ul>
-					<div class="day-time ms-auto">
-						<time>04 Sep 2022</time> &nbsp; | &nbsp
-						<div id="clock"></div>
+					<div class=" d-flex ms-auto">
+						<div class="" style="margin-right: 5px;"><button class="js-toggle-fullscreen-btn toggle-fullscreen-btn" aria-label="Enter fullscreen mode" hidden>
+							<svg class="toggle-fullscreen-svg" width="28" height="28" viewBox="-2 -2 28 28">
+								<g class="icon-fullscreen-enter">
+									<path d="M 2 9 v -7 h 7" />
+									<path d="M 22 9 v -7 h -7" />
+									<path d="M 22 15 v 7 h -7" />
+									<path d="M 2 15 v 7 h 7" />
+								</g>
+								
+								<g class="icon-fullscreen-leave">
+									<path d="M 24 17 h -7 v 7" />
+									<path d="M 0 17 h 7 v 7" />
+									<path d="M 0 7 h 7 v -7" />
+									<path d="M 24 7 h -7 v -7" />
+								</g>
+							</svg>
+						</button></div>
+						<div class="day-time">
+							<time>04 Sep 2022</time> &nbsp; | &nbsp
+							<div id="clock"></div>
+						</div>
+						
 					</div>
 				</div>
 
@@ -256,7 +276,7 @@
 					<div class="col-12 px-1">
 						<div class="row justify-content-center  mx-n1">
 
-							<div class="col px-1 mb-2">
+							<div class="col-lg col-md-4 px-1 mb-2">
 								<!-- col-xl-2 col-lg-4 col-md-4 col-sm-4 -->
 								<div class="widget widget-card-four h-100" style="background-color: darkslategray;">
 									<div class="widget-content">
@@ -275,7 +295,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col px-1 mb-2">
+							<div class="col-lg col-md-4 px-1 mb-2">
 								<div class="widget widget-card-four h-100" style="background-color: #191e3a;">
 									<div class="widget-content">
 										<div class="w-content">
@@ -293,7 +313,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col px-1 mb-2">
+							<div class="col-lg col-md-4 px-1 mb-2">
 								<div class="widget widget-card-four h-100" style="background-color: darkslategray;">
 									<div class="widget-content">
 										<div class="w-content">
@@ -311,7 +331,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col px-1 mb-2">
+							<div class="col-lg col-md-4 px-1 mb-2">
 								<div class="widget widget-card-four h-100" style="background-color: #191e3a;">
 									<div class="widget-content">
 										<div class="w-content">
@@ -349,7 +369,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col px-1">
+							<div class="col-lg col-md-4 px-1">
 								<div class="widget widget-card-four mb-2">
 									<div class="widget-content">
 										<div class="text-center">
@@ -639,8 +659,8 @@
 		// line dotted chart
 		var options2 = {
 			series: [{
-				name: "Desktops",
-				data: [10, 41, 200, 20000, 320, 300, 500, 1000]
+				name: "Cars",
+				data: [1200, 5000, 10000, 20000, 18000, 10000, 7000, 3000]
 			}],
 			chart: {
 				height: 300,
@@ -674,7 +694,7 @@
 		chart2.render();
 
 		var optionsStacked = {
-			colors : ['#e83e8c', '#4576b5'],
+			colors : ['#018725', '#4576b5'],
 			series: [{
 				name: 'Petrol Cars',
 				data: [44, 55, 41, 67, 22, 43],
@@ -1510,8 +1530,8 @@
 				max: 65
 			},
 			colors: {
-				bubbles: ['#159E4C', '#0744a6', '#000', '#ccc', '#159E4C', '#000', '#000'],
-				texts: ['#000000', '#000000', '#000000', '#000000', '#000000', '#000000', '#000000'],
+				bubbles: ['rgba(0, 143, 251, 0.85)', 'rgba(0, 143, 251, 0.85)', 'rgba(0, 143, 251, 0.85)',],
+				texts: ['#FFF', '#FFF', '#FFF',],
 			},
 			features: {
 				dragmove: true,

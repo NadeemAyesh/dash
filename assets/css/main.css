@@ -2164,6 +2164,7 @@ table .badge-info, table .badge-secondary, table .badge-dark  {
     cursor: pointer;
 }
 
-.widget-card-four .w-info h6 {
+.widget-card-four .w-info h6,
+.widget-card-four .w-info h6 small {
     font-weight: bold !important;
 }
