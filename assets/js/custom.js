@@ -6,6 +6,22 @@
 =========================================
 
 */
+
+$('.light-dark-mode-btn').on('click', function() {
+  if($(this).find('i').hasClass('bi-brightness-high')) {
+    $(this).find('i').removeClass('bi-brightness-high');
+    $(this).find('i').addClass('bi-moon');
+  } else {
+    $(this).find('i').addClass('bi-brightness-high');
+    $(this).find('i').removeClass('bi-moon');
+  }
+  if($('body').hasClass('light-mode')) {
+    $('body').removeClass('light-mode');
+  } else {
+    $('body').addClass('light-mode');
+  }
+});
+
 if (document.fullscreenEnabled || document.webkitFullscreenEnabled) {
 	const toggleBtn = document.querySelector(".js-toggle-fullscreen-btn");
 

@@ -2169,3 +2169,71 @@ table .badge-info, table .badge-secondary, table .badge-dark  {
 .widget-card-four .w-info h6 small {
     font-weight: bold !important;
 }
+
+.light-dark-mode-btn {
+    margin-right: 5px;
+}
+
+.light-dark-mode-btn i {
+    line-height: 0;
+    display: inline-block;
+}
+
+body.light-mode {
+    background-color: #f4f4f4 !important;
+}
+
+.light-mode .widget-card-four,
+.light-mode .widget-content-area,
+.light-mode .table {
+    background-color: #FFF !important;
+    box-shadow: none !important;
+}
+
+.light-mode .widget-card-four,
+.light-mode .widget-content-area {
+    border: 1px solid #e3e3e3;
+}
+
+.light-mode p,
+.light-mode .widget-card-four .w-info h6,
+.light-mode .widget-card-four .w-info p,
+.light-mode .table > tbody > tr > td,
+.light-mode h1, .light-mode h2, .light-mode h3, .light-mode h4, .light-mode h5, .light-mode h6 {
+    color: #0e1726;
+}
+
+.light-mode .w-icon i {
+    color: #fff;
+}
+
+.light-mode .topbar-nav.header #topbar {
+    border: 1px solid #e3e3e3;
+    background-color: #FFF !important;
+    box-shadow: none !important;
+}
+
+.light-mode #clock, time,
+.light-mode .topbar-nav.header nav#topbar ul.menu-categories li.menu a > div span {
+    color: #0e1726;
+}
+
+.light-mode .topbar-nav.header nav#topbar ul.menu-categories li.menu.active > a > div * {
+    color: #25d5e4;
+}
+
+.light-mode .car-type-list ul li {
+    color: #0e1726;
+}
+
+.light-mode .car-type-list li img {
+    filter: none;
+}
+
+.light-mode .map-img {
+    background-color: #FFF;
+}
+
+.light-mode .text-white {
+    color: #060818 !important;
+}

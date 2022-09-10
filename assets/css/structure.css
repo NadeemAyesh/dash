@@ -992,11 +992,12 @@ code { color: #e7515a; }
         margin: 0;
     }
     .topbar-nav.header #topbar {
-        margin: 0 32px;
+        margin: 0 10px;
         width: 100%;
         border-radius: 8px;
         background: #191e3a;
         min-height: 51px;
+        padding: 0 10px;
     }
     .topbar-nav.header nav#topbar ul.menu-categories {
         display: flex;

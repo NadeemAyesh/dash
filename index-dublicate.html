@@ -184,7 +184,7 @@
 
 </head>
 
-<body class="alt-menu sidebar-noneoverflow">
+<body class="alt-menu sidebar-noneoverflow ">
 	<!-- BEGIN LOADER -->
 	<div id="load_screen">
 		<div class="loader">
@@ -205,7 +205,7 @@
 		<div class="topbar-nav header navbar" role="banner">
 			<nav id="topbar">
 				<div class="d-flex justify-content-between align-items-center">
-					<a href="index-2.html" style="font-size: 16px;">
+					<a href="index.html" style="font-size: 16px;">
 						<img src="assets/img/QF-logo-1-1.png" class="navbar-logo" alt="logo" height="50" style="background: #FFF;
 						border-radius: 5px;
 						padding: 5px;" />
@@ -231,8 +231,11 @@
 						</li>
 					</ul>
 					
-					<div class=" d-flex ms-auto">
-						<div class="" style="margin-right: 5px;"><button class="js-toggle-fullscreen-btn toggle-fullscreen-btn" aria-label="Enter fullscreen mode" hidden>
+					<div class=" d-flex ms-auto align-items-center">
+						<button type="button" class="light-dark-mode-btn btn bg-transparent p-1 text-white">
+							<i class="bi bi-brightness-high"></i>
+						</button>
+						<div class="" style="margin-right: 5px;"><button class="js-toggle-fullscreen-btn toggle-fullscreen-btn btn" aria-label="Enter fullscreen mode" hidden>
 							<svg class="toggle-fullscreen-svg" width="28" height="28" viewBox="-2 -2 28 28">
 								<g class="icon-fullscreen-enter">
 									<path d="M 2 9 v -7 h 7" />
@@ -266,7 +269,7 @@
 			<div class="layout-px-spacing container-fluid">
 
 				<div class="row layout-top-spacing mx-n1">
-					<div class="col-3 px-1">
+					<div class="col-lg-3 col-md-12 px-1">
 						<div class="widget widget-card-four mb-1" style="background-color: darkslategray;">
 							<div class="widget-content">
 								<div class="w-content">
@@ -338,9 +341,9 @@
 							<div id="chart-pie" class=""></div>
 						</div>
 					</div>
-					<div class="col-9 px-1">
+					<div class="col-lg-9 px-1">
 						<div class="row mx-n1">
-							<div class="col-xl-9 col-lg-8 col-md-8 col-sm-8 col-12 px-1">
+							<div class="col-xl-9 col-lg-8 col-md-12 col-12 px-1">
 								<div class="widget-content widget-content-area mb-1">
 									<div class="table-scroll">
 										<table class="table table-borderless">
@@ -569,7 +572,7 @@
 								
 							</div> -->
 
-							<div class="col-xl-3 col-lg-4 col-md-4 col-sm-8 col-12 px-1">
+							<div class="col-xl-3 col-lg-4 col-md-12 col-12 px-1">
 								<div class="widget-content widget-content-area mb-1">
 									<h5>EUI</h5>
 									<div id="chart-bar"></div>
@@ -644,6 +647,7 @@
 		//Bar Chart
 		var options = {
 			series: [{
+				name: 'Buildings',
 				data: [3, 2, 5, 7, 3,]
 			}],
 			chart: {
@@ -690,6 +694,7 @@
 		
 		var options22 = {
 			series: [{
+				name: 'Buildings',
 				data: [0.84, .54, 1.4, 1.96, 0.84,]
 			}],
 			chart: {
@@ -737,7 +742,7 @@
 		// line dotted chart
 		var options2 = {
 			series: [{
-				name: "Desktops",
+				name: "Cars",
 				data: [10, 41, 35, 51, 49, 62, 69, 91, 148]
 			}],
 			chart: {
