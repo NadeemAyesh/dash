@@ -2241,3 +2241,7 @@ body.light-mode {
 .light-mode .map-img ul {
     background-color: #FFF;
 }
+
+.light-mode .apexcharts-title-text {
+    fill: #0e1726;
+}
