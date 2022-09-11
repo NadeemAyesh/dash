@@ -210,7 +210,22 @@
 						border-radius: 5px;
 						padding: 5px;" />
 					</a>
-					<ul class="list-unstyled menu-categories justify-content-center" id="topAccordion">
+					<ul class="nav nav-tabs list-unstyled menu-categories justify-content-center border-0" id="simpletab" role="tablist">
+						<li class="menu single-menu">
+							<a class=" active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+								<i class="bi bi-truck-front"></i>
+								<span>Vehicles Carbon Footprint</span>
+							</a>
+						</li>
+						<li class="menu single-menu">
+							<a id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true">
+								<i class="far fa-chart-bar" style="font-size: 22px"></i>
+								<span>Energy &</span>
+								<span>Assets</span>
+							</a>
+						</li>
+					</ul>
+					<!-- <ul class="list-unstyled menu-categories justify-content-center" id="topAccordion">
 						<li class="menu single-menu active">
 							<a href="#dashboard" data-toggle="collapse" aria-expanded="true"
 								class="dropdown-toggle autodroprown">
@@ -235,7 +250,7 @@
 								</div>
 							</a>
 						</li>
-					</ul>
+					</ul> -->
 					<div class=" d-flex ms-auto align-items-center">
 						<button type="button" class="light-dark-mode-btn btn bg-transparent p-1 text-white">
 							<i class="bi bi-brightness-high"></i>
@@ -268,8 +283,10 @@
 			</nav>
 		</div>
 		<!--  END TOPBAR  -->
-
-		<!--  BEGIN CONTENT PART  -->
+		
+		<div class="tab-content" id="simpletabContent">
+			<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+				   <!--  BEGIN CONTENT PART  -->
 		<div id="content" class="main-content">
 			<div class="layout-px-spacing container-fluid">
 
@@ -408,7 +425,7 @@
 							</div>
 							<div class="col-lg col-md-4 px-1">
 								<div class="widget-content widget-content-area mb-2">
-									<div id="chart-line-dotted" class=""></div>
+									<div id="chart-line-dotted1" class=""></div>
 								</div>
 							</div>
 							<div class="col-lg col-md-4 px-1">
@@ -516,10 +533,10 @@
 							</div>
 							<div class="col-lg col-md-4 px-1">
 								<div class="widget-content widget-content-area mb-2">
-									<div id="chart-pie" class=""></div>
+									<div id="chart-pie1" class=""></div>
 								</div>
 								<div class="widget-content widget-content-area mb-2">
-									<div id="chart-optionsAreaGradiend" class=""></div>
+									<div id="chart-optionsAreaGradiend1" class=""></div>
 								</div>
 							</div>
 
@@ -548,6 +565,342 @@
 			</div>
 		</div>
 		<!--  END CONTENT PART  -->
+			</div>
+			<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+				<!--  BEGIN CONTENT PART  -->
+		<div id="content" class="main-content">
+			<div class="layout-px-spacing container-fluid">
+
+				<div class="row layout-top-spacing mx-n1">
+					<div class="col-lg-3 col-md-12 px-1">
+						<div class="widget widget-card-four mb-1" style="background-color: darkslategray;">
+							<div class="widget-content">
+								<div class="w-content">
+									<div class="w-info">
+										<h6 class="value">154 <small>MWh</small></h6>
+										<p class="">Total Buildings Energy Consumptions</p>
+									</div>
+									<div class="">
+										<div class="w-icon bg-warning">
+											<i class="bi bi-lightning-fill"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="widget widget-card-four mb-1" style="background-color: darkslategray;">
+							<div class="widget-content">
+								<div class="w-content">
+									<div class="w-info">
+										<h6 class="value">1320 <small>Cars/day</small></h6>
+										<p class=""> Total carbon emission from buildings as cars</p>
+									</div>
+									<div class="">
+										<div class="w-icon bg-warning">
+											<i class="bi bi-truck"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="widget widget-card-four mb-1" style="background-color: darkslategray;">
+							<div class="widget-content">
+								<div class="w-content">
+									<div class="w-info">
+										<h6 class="value">2450 <small>Cars/day</small></h6>
+										<p class="">Building CO2 as cars + actual cars</p>
+									</div>
+									<div class="">
+										<div class="w-icon bg-warning">
+											<i class="bi bi-truck"></i>
+										</div>
+										<i class="bi bi-plus text-white"></i>
+										<div class="w-icon bg-warning">
+											<i class="bi bi-building"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="widget widget-card-four mb-1" style="background-color: darkslategray;">
+							<div class="widget-content">
+								<div class="w-content">
+									<div class="w-info">
+										<h6 class="value">43120 <small>Ryal Qatary</small></h6>
+										<p class="">Total Energy Cost to Qatar Ryal</p>
+									</div>
+									<div class="">
+										<div class="w-icon bg-warning">
+											<i class="bi bi-cash-coin"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="widget-content widget-content-area mb-1">
+							<div id="chart-line-dotted" class=""></div>
+						</div>
+						<div class="widget-content widget-content-area mb-2">
+							<div id="chart-pie" class=""></div>
+						</div>
+					</div>
+					<div class="col-lg-9 px-1">
+						<div class="row mx-n1">
+							<div class="col-xl-9 col-lg-8 col-md-12 col-12 px-1">
+								<div class="widget-content widget-content-area mb-1">
+									<div class="table-scroll">
+										<table class="table table-borderless">
+											<tr>
+												<td>
+													Building 4
+												</td>
+												<td>
+													<p>Fault Type</p>
+													<ul class="nav fault-items">
+														<li class="text-danger">
+															Critical
+															<span>15</span>
+														</li>
+														<li class="text-warning">
+															Minor
+															<span>15</span>
+														</li>
+														<li class="text-success">
+															Normal
+															<span>15</span>
+														</li>
+													</ul>
+												</td>
+												<td>
+													<p>Building Capacity</p>
+													<div class="d-flex">
+														<span class="text-danger">Electr.</span>
+														<div class="progress mb-2 mx-2">
+															<div class="progress-bar bg-gradient-danger"
+																role="progressbar" style="width: 57%" aria-valuenow="57"
+																aria-valuemin="0" aria-valuemax="100"></div>
+														</div>
+														<span class="text-danger">57%</span>
+													</div>
+													<div class="d-flex">
+														<span class="text-primary">Cooling</span>
+														<div class="progress mb-2 mx-2">
+															<div class="progress-bar bg-gradient-primary"
+																role="progressbar" style="width: 57%" aria-valuenow="57"
+																aria-valuemin="0" aria-valuemax="100"></div>
+														</div>
+														<span class="text-primary">57%</span>
+													</div>
+												</td>
+												<td style="width: 250px; text-align: center;">
+													<div id="radial-chart-table" class="chart-in-table"></div>
+													<p class="mb-0 text-primary">Ocupancy Level</p>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													Building 4
+												</td>
+												<td>
+													<p>Fault Type</p>
+													<ul class="nav fault-items">
+														<li class="text-danger">
+															Critical
+															<span>15</span>
+														</li>
+														<li class="text-warning">
+															Minor
+															<span>15</span>
+														</li>
+														<li class="text-success">
+															Normal
+															<span>15</span>
+														</li>
+													</ul>
+												</td>
+												<td>
+													<p>Building Capacity</p>
+													<div class="progress mb-2">
+														<div class="progress-bar bg-gradient-primary" role="progressbar"
+															style="width: 57%" aria-valuenow="57" aria-valuemin="0"
+															aria-valuemax="100"></div>
+													</div>
+													<div class="progress">
+														<div class="progress-bar bg-gradient-primary" role="progressbar"
+															style="width: 57%" aria-valuenow="57" aria-valuemin="0"
+															aria-valuemax="100"></div>
+													</div>
+												</td>
+												<td style="width: 250px; text-align: center;">
+													<div id="radial-chart-table2" class="chart-in-table"></div>
+													<p class="mb-0 text-primary">Ocupancy Level</p>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													Building 4
+												</td>
+												<td>
+													<p>Fault Type</p>
+													<ul class="nav fault-items">
+														<li class="text-danger">
+															Critical
+															<span>15</span>
+														</li>
+														<li class="text-warning">
+															Minor
+															<span>15</span>
+														</li>
+														<li class="text-success">
+															Normal
+															<span>15</span>
+														</li>
+													</ul>
+												</td>
+												<td>
+													<p>Building Capacity</p>
+													<div class="progress mb-2">
+														<div class="progress-bar bg-gradient-primary" role="progressbar"
+															style="width: 57%" aria-valuenow="57" aria-valuemin="0"
+															aria-valuemax="100"></div>
+													</div>
+													<div class="progress">
+														<div class="progress-bar bg-gradient-primary" role="progressbar"
+															style="width: 57%" aria-valuenow="57" aria-valuemin="0"
+															aria-valuemax="100"></div>
+													</div>
+												</td>
+												<td style="width: 250px; text-align: center;">
+													<div id="radial-chart-table3" class="chart-in-table"></div>
+													<p class="mb-0 text-primary">Ocupancy Level</p>
+												</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+								<div class="widget-content widget-content-area mb-1">
+									<div class="table-scroll">
+										<table class="table table-borderless">
+											<tr>
+												<td>
+													Booster Bump
+												</td>
+												<td>
+													<p>Run Time</p>
+													<b>180 Hrs</b>
+												</td>
+												<td>
+													<p>Total Fault</p>
+													<b class="text-danger">180</b>
+												</td>
+												<td>
+													<p>Building Capacity</p>
+													<div class="d-flex">
+														<div class="progress mb-2">
+															<div class="progress-bar bg-gradient-primary"
+																role="progressbar" style="width: 57%" aria-valuenow="57"
+																aria-valuemin="0" aria-valuemax="100"></div>
+														</div>
+														<span class="text-success">57%</span>
+													</div>
+												</td>
+												<td style="width: 250px;">
+													<div id="radial-chart-table" class="chart-in-table"></div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													Building 4
+												</td>
+												<td>
+													<p>Run Time</p>
+													<b>180 Hrs</b>
+												</td>
+												<td>
+													<p>Total Fault</p>
+													<b class="text-danger">180</b>
+												</td>
+												<td>
+													<p>Building Capacity</p>
+													<div class="progress mb-2">
+														<div class="progress-bar bg-gradient-primary" role="progressbar"
+															style="width: 57%" aria-valuenow="57" aria-valuemin="0"
+															aria-valuemax="100"></div>
+													</div>
+												</td>
+												<td style="width: 250px;">
+													<div id="radial-chart-table2" class="chart-in-table"></div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													Building 4
+												</td>
+												<td>
+													<p>Run Time</p>
+													<b>180 Hrs</b>
+												</td>
+												<td>
+													<p>Total Fault</p>
+													<b class="text-danger">180</b>
+												</td>
+												<td>
+													<p>Building Capacity</p>
+													<div class="progress mb-2">
+														<div class="progress-bar bg-gradient-primary" role="progressbar"
+															style="width: 57%" aria-valuenow="57" aria-valuemin="0"
+															aria-valuemax="100"></div>
+													</div>
+												</td>
+												<td style="width: 250px;">
+													<div id="radial-chart-table3" class="chart-in-table"></div>
+												</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+								<div class="widget-content widget-content-area mb-1">
+
+									<figure style="height: 435px;">
+										<!-- <img src="assets/img/map-city.jpg" alt="" class="img-fluid"
+											style="object-fit: cover; width: 100%; height: 100%; object-position: bottom;" /> -->
+											<video muted loop autoplay style="width: 100%; height: 100%; object-fit: fill;">
+												<source src="assets/videos/map-city1.mp4" type="video/mp4" />
+											</video>
+									</figure>
+									
+								</div>
+							</div>
+							<!-- <div class="col-xl-3 col-lg-4 col-md-4 col-sm-8 col-12">
+								
+							</div> -->
+
+							<div class="col-xl-3 col-lg-4 col-md-12 col-12 px-1">
+								<div class="widget-content widget-content-area mb-1">
+									<h5>EUI</h5>
+									<div id="chart-bar"></div>
+									<h5>CUI</h5>
+									<div id="chart-bar2"></div>
+								</div>
+								<div class="widget-content widget-content-area mb-2">
+									<div id="chart-optionsAreaGradiend" class=""></div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+
+				</div>
+
+			</div>
+		</div>
+		<!--  END CONTENT PART  -->
+			</div>
+		</div>
+
+		
 
 	</div>
 	<!-- END MAIN CONTAINER -->
@@ -693,7 +1046,7 @@
 			},
 		};
 
-		var chart2 = new ApexCharts(document.querySelector("#chart-line-dotted"), options2);
+		var chart2 = new ApexCharts(document.querySelector("#chart-line-dotted1"), options2);
 		chart2.render();
 
 		var optionsStacked = {
@@ -871,7 +1224,7 @@
 			}]
 		};
 
-		var chartPie = new ApexCharts(document.querySelector("#chart-pie"), optionsPie);
+		var chartPie = new ApexCharts(document.querySelector("#chart-pie1"), optionsPie);
 		chartPie.render();
 
 
@@ -985,7 +1338,7 @@
 			},
 		};
 
-		var chartoptionsAreaGradiend = new ApexCharts(document.querySelector("#chart-optionsAreaGradiend"), optionsAreaGradiend);
+		var chartoptionsAreaGradiend = new ApexCharts(document.querySelector("#chart-optionsAreaGradiend1"), optionsAreaGradiend);
 		chartoptionsAreaGradiend.render();
 
 
@@ -1546,26 +1899,303 @@
 
 
 	</script>
-
-	<script
-		src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList"></script>
-
-	<script src="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/build/ol.js"></script>
-
+	
 	<script>
+		var optionspage2 = {
+			series: [70],
+			chart: {
+				height: 150,
+				type: 'radialBar',
+			},
+			plotOptions: {
+				radialBar: {
+					hollow: {
+						size: '70%',
+					}
+				},
+			},
+			labels: ['860 Occ'],
+		};
 
-		var map = new ol.Map({
-			target: 'map',
-			layers: [
-				new ol.layer.Tile({
-					source: new ol.source.OSM()
-				})
+		var chart = new ApexCharts(document.querySelector("#radial-chart-table"), optionspage2);
+		chart.render();
+
+		var chart2 = new ApexCharts(document.querySelector("#radial-chart-table2"), optionspage2);
+		chart2.render();
+
+		var chart3 = new ApexCharts(document.querySelector("#radial-chart-table3"), optionspage2);
+		chart3.render();
+
+		//Bar Chart
+		var optionspage222 = {
+			series: [{
+				name: 'Buildings',
+				data: [3, 2, 5, 7, 3,]
+			}],
+			chart: {
+				type: 'bar',
+				height: 230
+			},
+			title: {
+				text: 'Energy Utilization Index',
+				posiiton: 'left'
+			},
+			plotOptions: {
+				bar: {
+					horizontal: true,
+					dataLabels: {
+						position: 'top',
+					},
+				}
+			},
+			dataLabels: {
+				enabled: true,
+				offsetX: -6,
+				style: {
+					fontSize: '12px',
+					colors: ['#fff']
+				}
+			},
+			stroke: {
+				show: true,
+				width: 1,
+				colors: ['#fff']
+			},
+			tooltip: {
+				shared: true,
+				intersect: false
+			},
+			xaxis: {
+				categories: ['Building 01', 'Building 02', 'Building 03', 'Building 04', 'Building 05'],
+			},
+		};
+
+		var chart = new ApexCharts(document.querySelector("#chart-bar"), optionspage222);
+		chart.render();
+
+		
+		var options22344 = {
+			series: [{
+				name: 'Buildings',
+				data: [0.84, .54, 1.4, 1.96, 0.84,]
+			}],
+			chart: {
+				type: 'bar',
+				height: 230
+			},
+			title: {
+				text: 'Cost Utilization Index',
+				posiiton: 'left'
+			},
+			plotOptions: {
+				bar: {
+					horizontal: true,
+					dataLabels: {
+						position: 'top',
+					},
+				}
+			},
+			dataLabels: {
+				enabled: true,
+				offsetX: -6,
+				style: {
+					fontSize: '12px',
+					colors: ['#fff']
+				}
+			},
+			stroke: {
+				show: true,
+				width: 1,
+				colors: ['#fff']
+			},
+			tooltip: {
+				shared: true,
+				intersect: false
+			},
+			xaxis: {
+				categories: ['Building 01', 'Building 02', 'Building 03', 'Building 04', 'Building 05'],
+			},
+		};
+
+		var chart2 = new ApexCharts(document.querySelector("#chart-bar2"), options22344);
+		chart2.render();
+
+		//------------------
+		// line dotted chart
+		var options2334455 = {
+			series: [{
+				name: "Cars",
+				data: [10, 41, 35, 51, 49, 62, 69, 91, 148]
+			}],
+			chart: {
+				height: 250,
+				type: 'line',
+				zoom: {
+					enabled: false
+				}
+			},
+			dataLabels: {
+				enabled: false
+			},
+			stroke: {
+				curve: 'straight'
+			},
+			title: {
+				text: 'Product Trends by Month',
+				align: 'left'
+			},
+			grid: {
+				row: {
+					colors: ['transparent', 'transparent'], // takes an array which will be repeated on columns
+					opacity: 0.5
+				},
+			},
+			xaxis: {
+				categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
+			}
+		};
+
+		var chart2 = new ApexCharts(document.querySelector("#chart-line-dotted"), options2334455);
+		chart2.render();
+
+		var optionsAreaGradiend123 = {
+			series: [
+				{
+					data: [10, 20, 15, 30, 35, 30, 45, 59, 30, 35, 25, 29, 15]
+				}
 			],
-			view: new ol.View({
-				center: ol.proj.fromLonLat([-93.17, 44.95]),
-				zoom: 12
-			})
-		});
+			chart: {
+				type: "area",
+				height: 170,
+				background: "transparent",
+				dropShadow: {
+					enabled: true,
+					color: "#000"
+				},
+				zoom: {
+					enabled: false
+				}
+			},
+			dataLabels: {
+				enabled: false
+			},
+			markers: {
+				colors: ["#FFFFFF"]
+			},
+			stroke: {
+				curve: "smooth",
+				width: 3,
+				fill: {
+					type: "gradient",
+					gradient: {
+						type: "horizontal",
+						colorStops: [
+							[
+								{
+									offset: 0,
+									color: "#0085FF",
+									opacity: 1
+								},
+								{
+									offset: 33,
+									color: "#FF2E92",
+									opacity: 1
+								},
+								{
+									offset: 80,
+									color: "#FFAC2F",
+									opacity: 1
+								},
+								{
+									offset: 99,
+									color: "#FFFFFF",
+									opacity: 1
+								}
+							]
+						]
+					}
+				}
+			},
+			fill: {
+				type: "gradient",
+				gradient: {
+					shadeIntensity: 1,
+					type: "vertical",
+					colorStops: [
+						[
+							{
+								offset: 0,
+								color: "#F48116",
+								opacity: 1.0
+							},
+							{
+								offset: 70,
+								color: "#6510F8",
+								opacity: 0.2
+							},
+							{
+								offset: 97,
+								color: "#6510F8",
+								opacity: 0.0
+							}
+						]
+					]
+				}
+			},
+			xaxis: {
+				axisBorder: {
+					show: false
+				},
+				axisTicks: {
+					show: false
+				},
+				labels: {
+					style: {
+						colors: "#aaa"
+					}
+				}
+			},
+			yaxis: {
+				labels: {
+					show: false
+				}
+			},
+			grid: {
+				borderColor: "#222226"
+			},
+			legend: {
+				horizontalAlign: "left"
+			},
+		};
+
+		var chartoptionsAreaGradiend = new ApexCharts(document.querySelector("#chart-optionsAreaGradiend"), optionsAreaGradiend123);
+		chartoptionsAreaGradiend.render();
+
+		var optionsPie1234 = {
+			series: [{
+				data: [25, 14, 8, 4, 2,]
+			}],
+			chart: {
+				type: 'bar',
+				height: 255
+			},
+			plotOptions: {
+				bar: {
+					borderRadius: 4,
+					horizontal: true,
+				}
+			},
+			dataLabels: {
+				enabled: false
+			},
+			xaxis: {
+				categories: ['Chillers (mWh)', 'FAHU (mWh)', 'Package Unites (mWh)', 'Bimps (mWh)', 'CCU (mWh)'
+				],
+			}
+		};
+
+		var chartPie = new ApexCharts(document.querySelector("#chart-pie"), optionsPie1234);
+		chartPie.render();
 	</script>
 
 </body>
