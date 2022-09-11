@@ -2257,3 +2257,11 @@ body.light-mode {
 .light-mode .topbar-nav.header nav#topbar ul.menu-categories li.menu > a {
     color: #0e1726;
 }
+
+.apexcharts-legend-marker {
+    margin-right: 8px !important;
+}
+
+.apexcharts-legend-series {
+    margin-bottom: 5px !important;
+}
