@@ -2080,7 +2080,8 @@ table .badge-info, table .badge-secondary, table .badge-dark  {
     /* font-weight: bold; */
     text-align: center;
     /* line-height: 50px; */
-    padding: 15px 0;
+    padding: 10px 0;
+    line-height: 1;
 }
 
 .pon {
@@ -2146,6 +2147,7 @@ table .badge-info, table .badge-secondary, table .badge-dark  {
     height: 100px;
     background-color: rgb(28 0 239 / 73%);
     /* line-height: 100px; */
+    padding: 25px 0; 
 }
 
 .pon-green {
@@ -2157,6 +2159,7 @@ table .badge-info, table .badge-secondary, table .badge-dark  {
     height: 60px;
     background-color: rgb(158 255 14 / 71%);
     /* line-height: 60px; */
+    padding: 20px 0; 
 }
 
 .pon-yellow {
@@ -2168,6 +2171,7 @@ table .badge-info, table .badge-secondary, table .badge-dark  {
     height: 60px;
     background-color: rgb(251 218 0 / 71%);
     /* line-height: 60px; */
+    padding: 20px 0; 
 }
 
 .bubble.hashtag {
