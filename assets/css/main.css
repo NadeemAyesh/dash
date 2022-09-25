@@ -2047,7 +2047,8 @@ table .badge-info, table .badge-secondary, table .badge-dark  {
     background-color: #202021;
     position: relative;
     margin-bottom: 0;
-    width: 871px;
+    /* width: 871px; */
+    width: 100%;
 }
 
 .map-img img {
@@ -2082,6 +2083,7 @@ table .badge-info, table .badge-secondary, table .badge-dark  {
     /* line-height: 50px; */
     padding: 10px 0;
     line-height: 1;
+    z-index: 99;
 }
 
 .pon {
@@ -2274,4 +2276,17 @@ body.light-mode {
 
 .topbar-nav.header nav#topbar ul.menu-categories li.menu > a i {
     margin-right: 7px;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+}
+
+#chart-pie1 .apexcharts-legend.position-right, #chart-pie1 .apexcharts-legend.position-left {
+    top: auto !important;
+    bottom: 0;
+    left: 0 !important;
+    width: 100%;
+    display: flex;
 }
