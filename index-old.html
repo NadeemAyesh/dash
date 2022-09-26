@@ -1,0 +1,2226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+	<title>مؤسسة قطر | Qatar Foundation</title>
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+	<link rel="manifest" href="assets/img/site.webmanifest">
+	<link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="assets/img/favicon.ico">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-config" content="assets/img/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<link href="assets/css/loader.css" rel="stylesheet" type="text/css" />
+	<script src="assets/js/loader.js"></script>
+
+	<!-- BEGIN GLOBAL MANDATORY STYLES -->
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&amp;display=swap" rel="stylesheet">
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/plugins.css" rel="stylesheet" type="text/css" />
+	<!-- END GLOBAL MANDATORY STYLES -->
+
+	<!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM STYLES -->
+	<link href="plugins/apex/apexcharts.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/dashboard/dash_2.css" rel="stylesheet" type="text/css" />
+	<!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
+	<!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM STYLES -->
+	<link href="assets/css/scrollspyNav.css" rel="stylesheet" type="text/css" />
+	<!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
+	<style>
+		.apexcharts-canvas {
+			margin: 0 auto;
+		}
+
+		.apexcharts-title-text {
+			fill: #e0e6ed;
+		}
+
+		.apexcharts-yaxis-label {
+			fill: #e0e6ed;
+		}
+
+		.apexcharts-xaxis-label {
+			fill: #e0e6ed;
+		}
+
+		.apexcharts-legend-text {
+			color: #e0e6ed !important;
+		}
+
+		.apexcharts-radialbar-track.apexcharts-track .apexcharts-radialbar-area {
+			stroke: #191e3a;
+		}
+
+		.apexcharts-pie-label,
+		.apexcharts-datalabel,
+		.apexcharts-datalabel-label,
+		.apexcharts-datalabel-value {
+			fill: #bfc9d4;
+		}
+	</style>
+
+	<link rel="stylesheet" href="plugins/font-icons/fontawesome/css/regular.css">
+	<link rel="stylesheet" href="plugins/font-icons/fontawesome/css/fontawesome.css">
+
+	<style>
+		.feather-icon .icon-section {
+			padding: 30px;
+		}
+
+		.feather-icon .icon-section h4 {
+			color: #bfc9d4;
+			font-size: 17px;
+			font-weight: 600;
+			margin: 0;
+			margin-bottom: 16px;
+		}
+
+		.feather-icon .icon-content-container {
+			padding: 0 16px;
+			width: 86%;
+			margin: 0 auto;
+			border: 1px solid #191e3a;
+			border-radius: 6px;
+		}
+
+		.feather-icon .icon-section p.fs-text {
+			padding-bottom: 30px;
+			margin-bottom: 30px;
+		}
+
+		.feather-icon .icon-container {
+			cursor: pointer;
+		}
+
+		.feather-icon .icon-container svg {
+			color: #bfc9d4;
+			margin-right: 6px;
+			vertical-align: middle;
+			width: 20px;
+			height: 20px;
+			fill: rgba(0, 23, 55, 0.08);
+		}
+
+		.feather-icon .icon-container:hover svg {
+			color: #888ea8;
+		}
+
+		.feather-icon .icon-container span {
+			display: none;
+		}
+
+		.feather-icon .icon-container:hover span {
+			color: #888ea8;
+		}
+
+		.feather-icon .icon-link {
+			color: #888ea8;
+			font-weight: 600;
+			font-size: 14px;
+		}
+
+
+		/*FAB*/
+		.fontawesome .icon-section {
+			padding: 30px;
+		}
+
+		.fontawesome .icon-section h4 {
+			color: #bfc9d4;
+			font-size: 17px;
+			font-weight: 600;
+			margin: 0;
+			margin-bottom: 16px;
+		}
+
+		.fontawesome .icon-content-container {
+			padding: 0 16px;
+			width: 86%;
+			margin: 0 auto;
+			border: 1px solid #191e3a;
+			border-radius: 6px;
+		}
+
+		.fontawesome .icon-section p.fs-text {
+			padding-bottom: 30px;
+			margin-bottom: 30px;
+		}
+
+		.fontawesome .icon-container {
+			cursor: pointer;
+		}
+
+		.fontawesome .icon-container i {
+			font-size: 20px;
+			color: #bfc9d4;
+			vertical-align: middle;
+			margin-right: 10px;
+		}
+
+		.fontawesome .icon-container:hover i {
+			color: #888ea8;
+		}
+
+		.fontawesome .icon-container span {
+			color: #888ea8;
+			display: none;
+		}
+
+		.fontawesome .icon-container:hover span {
+			color: #888ea8;
+		}
+
+		.fontawesome .icon-link {
+			color: #888ea8;
+			font-weight: 600;
+			font-size: 14px;
+		}
+	</style>
+
+</head>
+
+<body class="alt-menu sidebar-noneoverflow">
+	<!-- BEGIN LOADER -->
+	<div id="load_screen">
+		<div class="loader">
+			<div class="loader-content">
+				<div class="spinner-grow align-self-center"></div>
+			</div>
+		</div>
+	</div>
+	<!--  END LOADER -->
+
+	<!--  BEGIN MAIN CONTAINER  -->
+	<div class="main-container" id="container">
+
+		<div class="overlay"></div>
+		<div class="search-overlay"></div>
+
+		<!--  BEGIN TOPBAR  -->
+		<div class="topbar-nav header navbar" role="banner">
+			<nav id="topbar">
+				<div class="d-flex justify-content-between align-items-center">
+					<a href="index.html" style="font-size: 16px;">
+						<img src="assets/img/QF-logo-1-1.png" class="navbar-logo" alt="logo" height="50" style="background: #FFF;
+						border-radius: 5px;
+						padding: 5px;" />
+					</a>
+					<ul class="nav nav-tabs list-unstyled menu-categories justify-content-center border-0" id="simpletab" role="tablist">
+						<li class="menu single-menu">
+							<a class=" active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+								<i class="bi bi-truck-front"></i>
+								<span>Vehicles Carbon Footprint</span>
+							</a>
+						</li>
+						<li class="menu single-menu">
+							<a id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true">
+								<i class="far fa-chart-bar" style="font-size: 22px"></i>
+								<span>Energy & Assets</span>
+							</a>
+						</li>
+					</ul>
+					<!-- <ul class="list-unstyled menu-categories justify-content-center" id="topAccordion">
+						<li class="menu single-menu active">
+							<a href="#dashboard" data-toggle="collapse" aria-expanded="true"
+								class="dropdown-toggle autodroprown">
+								<div class="">
+									<i class="bi bi-truck-front"></i>
+									<span>Vehicles Carbon Footprint</span>
+								</div>
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+									fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+									stroke-linejoin="round" class="feather feather-chevron-down">
+									<polyline points="6 9 12 15 18 9"></polyline>
+								</svg>
+							</a>
+						</li>
+
+						<li class="menu single-menu">
+							<a href="index-dublicate.html">
+								<div class="">
+									<i class="far fa-chart-bar" style="font-size: 22px"></i>
+									<span>Energy &</span>
+									<span>Assets</span>
+								</div>
+							</a>
+						</li>
+					</ul> -->
+					<div class=" d-flex ms-auto align-items-center">
+						<button type="button" class="light-dark-mode-btn btn bg-transparent p-1 text-white">
+							<i class="bi bi-brightness-high"></i>
+						</button>
+						<div class="" style="margin-right: 5px;"><button class="js-toggle-fullscreen-btn toggle-fullscreen-btn btn" aria-label="Enter fullscreen mode" hidden>
+							<svg class="toggle-fullscreen-svg" width="28" height="28" viewBox="-2 -2 28 28">
+								<g class="icon-fullscreen-enter">
+									<path d="M 2 9 v -7 h 7" />
+									<path d="M 22 9 v -7 h -7" />
+									<path d="M 22 15 v 7 h -7" />
+									<path d="M 2 15 v 7 h 7" />
+								</g>
+								
+								<g class="icon-fullscreen-leave">
+									<path d="M 24 17 h -7 v 7" />
+									<path d="M 0 17 h 7 v 7" />
+									<path d="M 0 7 h 7 v -7" />
+									<path d="M 24 7 h -7 v -7" />
+								</g>
+							</svg>
+						</button></div>
+						<div class="day-time">
+							<time>04 Sep 2022</time> &nbsp; | &nbsp
+							<div id="clock"></div>
+						</div>
+						
+					</div>
+				</div>
+
+			</nav>
+		</div>
+		<!--  END TOPBAR  -->
+		
+		<div class="tab-content" id="simpletabContent">
+			<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+				   <!--  BEGIN CONTENT PART  -->
+		<div id="content" class="main-content">
+			<div class="layout-px-spacing container-fluid">
+
+				<div class="row layout-top-spacing mx-n1">
+					<!-- <div class="col-3 px-1">
+					</div> -->
+					<div class="col-12 px-1">
+						<div class="row justify-content-center  mx-n1">
+
+							<div class="col-lg col-md-4 px-1 mb-2">
+								<!-- col-xl-2 col-lg-4 col-md-4 col-sm-4 -->
+								<div class="widget widget-card-four h-100" style="background-color: darkslategray;">
+									<div class="widget-content">
+										<div class="w-content">
+											<div class="w-info">
+												<h5>Cars Staying hours</h5>
+												<h6 class="value">4 <small>Hrs/Day</small></h6>
+												<!-- <p class="">No.Of hours the car stays inside the city</p> -->
+											</div>
+											<div class="">
+												<div class="w-icon bg-warning">
+													<i class="bi bi-alarm"></i>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg col-md-4 px-1 mb-2">
+								<div class="widget widget-card-four h-100" style="background-color: #191e3a;">
+									<div class="widget-content">
+										<div class="w-content">
+											<div class="w-info">
+												<h5>Carbon Emission as Trees</h5>
+												<h6 class="value">25 <small>Trees</small></h6>
+												<!-- <p class="">Convert total kWh to kg.CO2/kWh as Number of trees</p> -->
+											</div>
+											<div class="">
+												<div class="w-icon bg-success">
+													<i class="bi bi-tree-fill"></i>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg col-md-4 px-1 mb-2">
+								<div class="widget widget-card-four h-100" style="background-color: darkslategray;">
+									<div class="widget-content">
+										<div class="w-content">
+											<div class="w-info">
+												<h5>Available Parking Slots</h5>
+												<h6 class="value">517 <small>Slots</small></h6>
+												<!-- <p class="">showing available car park slots in the city</p> -->
+											</div>
+											<div class="">
+												<div class="w-icon bg-info">
+													<i class="bi bi-p-square"></i>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg col-md-4 px-1 mb-2">
+								<div class="widget widget-card-four h-100" style="background-color: #191e3a;">
+									<div class="widget-content">
+										<div class="w-content">
+											<div class="w-info">
+												<h5>Cars Over night</h5>
+												<h6 class="value">54 <small>Cars</small></h6>
+												<!-- <p class="">Number of entered cars - number of left cars after 12:00 AM</p> -->
+											</div>
+											<div class="">
+												<div class="w-icon bg-danger">
+													<svg width="22" xmlns="http://www.w3.org/2000/svg"
+														xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+														id="Capa_1" x="0px" y="0px" viewBox="0 0 494.289 494.289"
+														style="enable-background:new 0 0 494.289 494.289;"
+														xml:space="preserve">
+														<g id="XMLID_9_">
+															<path id="XMLID_15_"
+																d="M419.215,247.14c0-115.571-94.037-209.591-209.608-209.591C94.037,37.549,0,131.569,0,247.14   s94.037,209.6,209.606,209.6c14.146,0,25.62-11.467,25.62-25.62c0-14.152-11.475-25.619-25.62-25.619   c-87.333,0-158.367-71.036-158.367-158.361c0-87.316,71.034-158.352,158.367-158.352s158.37,71.036,158.37,158.352   c0,14.153,11.477,25.62,25.619,25.62C407.741,272.76,419.215,261.293,419.215,247.14z"
+																fill="#FFF" />
+															<path id="XMLID_14_"
+																d="M349.547,407.344h-40.766v-0.441l13.395-11.184c21.017-18.764,38.662-38.203,38.662-62.555   c0-26.362-18.113-45.586-50.955-45.586c-14.462,0-27.47,3.629-37.695,8.832c-5.82,2.961-8.438,9.833-6.037,15.912l0.334,0.826   c1.251,3.203,3.82,5.73,7.021,6.972c3.219,1.251,6.806,1.101,9.89-0.417c5.806-2.827,12.427-4.861,19.565-4.861   c16.746,0,23.9,9.374,23.9,21.224c-0.432,16.979-15.861,33.292-47.586,61.664l-16.262,14.719c-1.584,1.443-2.501,3.494-2.501,5.655   v9.54c0,4.211,3.419,7.631,7.639,7.631h81.396c7.707,0,13.959-6.255,13.959-13.961   C363.506,413.599,357.254,407.344,349.547,407.344z"
+																fill="#FFF" />
+															<path id="XMLID_11_"
+																d="M481.563,375.17h-4.704v-77.501c0-4.212-3.42-7.63-7.639-7.63h-29.674c-2.635,0-5.088,1.359-6.471,3.603   l-51.59,83.03c-0.751,1.209-1.149,2.602-1.149,4.027v12.31c0,4.211,3.419,7.631,7.639,7.631h56.71v18.556   c0,8.881,7.204,16.078,16.079,16.078c8.89,0,16.095-7.206,16.095-16.096V400.64h4.686c7.04,0,12.744-5.705,12.744-12.735   C494.289,380.874,488.585,375.17,481.563,375.17z M444.685,343.005v32.165h-32.627v-0.442l19.449-31.724   c4.904-9.165,8.707-17.664,13.41-27.037h0.885C445.135,325.341,444.685,334.29,444.685,343.005z"
+																fill="#FFF" />
+															<path id="XMLID_10_"
+																d="M209.607,115.127c-10.218,0-18.5,8.283-18.5,18.5v102.114c0,16.769,13.643,30.411,30.411,30.411h74.206   c10.218,0,18.5-8.283,18.5-18.5s-8.282-18.5-18.5-18.5h-67.617v-95.525C228.107,123.41,219.824,115.127,209.607,115.127z"
+																fill="#FFF" />
+														</g>
+
+													</svg>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg col-md-4 px-1">
+								<div class="widget widget-card-four mb-2">
+									<div class="widget-content">
+										<div class="text-center">
+											<ul class="nav humi-nave">
+												<li class="nav-item">
+													<i class="bi bi-thermometer-sun"></i> 40 <sup>c</sup>
+												</li>
+												<li class="nav-item">
+													<i class="bi bi-wind"></i> 13 <sub>µg/m³</sub>
+												</li>
+												<li class="nav-item">
+													<i class="bi bi-thermometer-snow"></i> 67 <sub>%</sub>
+												</li>
+												<li class="nav-item">
+													<i class="bi bi-cloud-sun"></i>  29.59 <sub>Hg
+													</sub>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="row align-items-center justify-content-center mx-n1">
+							<!-- col-xl-2 col-lg-4 col-md-4 col-sm-4 -->
+							<div class="col-lg col-md-4 px-1">
+								<div class="widget-content widget-content-area mb-2">
+									<div id="chart-area" class=""></div>
+									<!-- <p>kg.CO2/kWh</p> -->
+								</div>
+							</div>
+							<div class="col-lg col-md-4 px-1">
+								<div class="widget-content widget-content-area mb-2">
+									<div id="chart-line-dotted1" class=""></div>
+								</div>
+							</div>
+							<div class="col-lg col-md-4 px-1">
+								<div class="widget-content widget-content-area mb-2" style="height: 325px;">
+									<p>Cars by Fuel Break Down</p>
+									<!-- <div id="bubble-chart"></div> -->
+									<div id="bubbles">
+										<div class="plot"></div>
+									</div>
+
+								</div>
+							</div>
+							<div class="col-lg col-md-4 px-1">
+								<div class="widget-content widget-content-area mb-2">
+									<div id="chart-stacked" class=""></div>
+								</div>
+
+							</div>
+							<div class="col-lg col-md-4 px-1">
+								<div class="widget-content widget-content-area mb-2">
+									<div id="chart-stacked2" class=""></div>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="row mx-n1">
+
+							<div class="col-lg-2 px-1">
+								<!-- col-xl-2 col-lg-4 col-md-4 col-sm-4  -->
+								<div class="widget-content widget-content-area mb-2">
+									<h5 style="font-size: 16px; margin-bottom: 10px">Daily Car Type Quantity</h5>
+									<div class="car-type-list">
+										<ul>
+											<li>
+												<span class="car-num">20</span>
+												<img src="assets/img/cars/motorbike.png" alt="" />
+												Motorcycle
+											</li>
+											<li>
+												<span class="car-num bg-danger">320</span> 
+												<img src="assets/img/cars/sedan.png" alt="" />
+												Sedan
+											</li>
+											<li>
+												<span class="car-num bg-info">114</span>
+												<img src="assets/img/cars/suv.png" alt="" />
+												SUV
+											</li>
+											<li>
+												<span class="car-num bg-secondary">25</span> 
+												<img src="assets/img/cars/pickup-truck.png" alt="" />
+												Pickup
+											</li>
+											<li>
+												<span class="car-num bg-warning">50</span>
+												<img src="assets/img/cars/van.png" alt="" />
+												Van
+											</li>
+											<li>
+												<span class="car-num bg-info">10</span>
+												<img src="assets/img/cars/bus.png" alt="" />
+												Bus
+											</li>
+											<li>
+												<span class="car-num bg-info">2</span>
+												<img src="assets/img/cars/truck.png" alt="" />
+												Truck
+											</li>
+											<li>
+												<span class="car-num bg-info">5</span> Others
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg col-xl-7 px-1">
+								<!-- col-xl-6 col-lg-4 col-md-4 col-sm-4 col-12 -->
+								<div class="widget-content widget-content-area mb-2" >
+									<figure class="map-img" style="">
+										<div class="circle-top pon" style="padding: 25px 0; width: 80px; height: 80px;">269.22 kg/km</div>
+										<div class="circle-top pon-1" style="width: 50px; height: 50px;">73.8 kg/km</div>
+										<div class="circle-top pon-2">137.16 kg/km</div>
+										<div class="circle-top pon-3" style="width: 50px; height: 50px;">51.36 kg/km</div>
+										<div class="circle-top pon-4" style="width: 50px; height: 50px;">75.18 kg/km</div>
+										<div class="circle-top pon-5">103.98 kg/km</div>
+										<div class="circle-top pon-6" style="padding: 25px 0; width: 80px; height: 80px;">211.92 kg/km</div>
+										<div class="circle-top pon-7" style="padding: 25px 0; width: 80px; height: 80px;">286.26 kg/km</div>
+										<div class="circle-top pon-8">92.88 kg/km</div>
+										<div class="circle-top pon-big">1301.76 <br> kg/km</div>
+										<div class="circle-top pon-green">425 </div>
+										<div class="circle-top pon-yellow">121</div>
+										<img src="assets/img/Screenshot_4.png" alt="" class="img-fluid"
+											style="" />
+											<ul class="d-flex list-unstyled legend-ul justify-content-center mt-3">
+												<li><span class="" style="background-color: rgb(80 131 255 / 73%);"></span> Car Foot Print / Day</li>
+										<li><span class="" style="background-color: rgb(28 0 239 / 73%);"></span> Car Foot Accumulated</li>
+												<li><span class="bg-success"></span> Car Entered</li>
+												<li><span class="bg-warning"></span> Car Left</li>
+											</ul>
+									</figure>
+									
+								</div>
+							</div>
+							<div class="col-lg col-md-4 px-1">
+								<div class="widget-content widget-content-area mb-2">
+									<div id="chart-pie1" class=""></div>
+								</div>
+								<div class="widget-content widget-content-area mb-2">
+									<div id="chart-optionsAreaGradiend1" class=""></div>
+								</div>
+							</div>
+
+
+						</div>
+
+					</div>
+
+
+
+
+
+
+				</div>
+
+				<!-- <div class="footer-wrapper">
+                    <div class="footer-section f-section-1">
+                        <p class="">Copyright © 2022,
+                            All rights reserved.</p>
+                    </div>
+                    <div class="footer-section f-section-2">
+                        
+                    </div>
+                </div> -->
+
+			</div>
+		</div>
+		<!--  END CONTENT PART  -->
+			</div>
+			<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+				<!--  BEGIN CONTENT PART  -->
+		<div id="content" class="main-content">
+			<div class="layout-px-spacing container-fluid">
+
+				<div class="row layout-top-spacing mx-n1">
+					<div class="col-lg-3 col-md-12 px-1">
+						<div class="widget widget-card-four mb-1" style="background-color: darkslategray;">
+							<div class="widget-content">
+								<div class="w-content">
+									<div class="w-info">
+										<h6 class="value">154 <small>MWh</small></h6>
+										<p class="">Total Buildings Energy Consumptions</p>
+									</div>
+									<div class="">
+										<div class="w-icon bg-warning">
+											<i class="bi bi-lightning-fill"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="widget widget-card-four mb-1" style="background-color: darkslategray;">
+							<div class="widget-content">
+								<div class="w-content">
+									<div class="w-info">
+										<h6 class="value">1320 <small>Cars/day</small></h6>
+										<p class=""> Total carbon emission from buildings as cars</p>
+									</div>
+									<div class="">
+										<div class="w-icon bg-warning">
+											<i class="bi bi-truck"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="widget widget-card-four mb-1" style="background-color: darkslategray;">
+							<div class="widget-content">
+								<div class="w-content">
+									<div class="w-info">
+										<h6 class="value">2450 <small>Cars/day</small></h6>
+										<p class="">Building CO2 as cars + actual cars</p>
+									</div>
+									<div class="">
+										<div class="w-icon bg-warning">
+											<i class="bi bi-truck"></i>
+										</div>
+										<i class="bi bi-plus text-white"></i>
+										<div class="w-icon bg-warning">
+											<i class="bi bi-building"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="widget widget-card-four mb-1" style="background-color: darkslategray;">
+							<div class="widget-content">
+								<div class="w-content">
+									<div class="w-info">
+										<h6 class="value">43120 <small>Ryal Qatary</small></h6>
+										<p class="">Total Energy Cost to Qatar Ryal</p>
+									</div>
+									<div class="">
+										<div class="w-icon bg-warning">
+											<i class="bi bi-cash-coin"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="widget-content widget-content-area mb-1">
+							<div id="chart-line-dotted" class=""></div>
+						</div>
+						<div class="widget-content widget-content-area mb-2">
+							<div id="chart-pie" class=""></div>
+						</div>
+					</div>
+					<div class="col-lg-9 px-1">
+						<div class="row mx-n1">
+							<div class="col-xl-9 col-lg-8 col-md-12 col-12 px-1">
+								<div class="widget-content widget-content-area mb-1">
+									<div class="table-scroll">
+										<table class="table table-borderless">
+											<tr>
+												<td>
+													Building 1
+												</td>
+												<td>
+													<p>Fault Type</p>
+													<ul class="nav fault-items">
+														<li class="text-danger">
+															Critical
+															<span>15</span>
+														</li>
+														<li class="text-warning">
+															Minor
+															<span>15</span>
+														</li>
+														<li class="text-success">
+															Normal
+															<span>15</span>
+														</li>
+													</ul>
+												</td>
+												<td>
+													<p>Building Capacity</p>
+													<div class="d-flex">
+														<span class="text-danger">Electr.</span>
+														<div class="progress mb-2 mx-2">
+															<div class="progress-bar bg-gradient-danger"
+																role="progressbar" style="width: 75%" aria-valuenow="75"
+																aria-valuemin="0" aria-valuemax="100"></div>
+														</div>
+														<span class="text-danger">75%</span>
+													</div>
+													<div class="d-flex">
+														<span class="text-primary">Cooling</span>
+														<div class="progress mb-2 mx-2">
+															<div class="progress-bar bg-gradient-primary"
+																role="progressbar" style="width: 57%" aria-valuenow="57"
+																aria-valuemin="0" aria-valuemax="100"></div>
+														</div>
+														<span class="text-primary">57%</span>
+													</div>
+												</td>
+												<td style="width: 250px; text-align: center;">
+													<div id="radial-chart-table" class="chart-in-table"></div>
+													<p class="mb-0 text-primary">Ocupancy Level</p>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													Building 2
+												</td>
+												<td>
+													<p>Fault Type</p>
+													<ul class="nav fault-items">
+														<li class="text-danger">
+															Critical
+															<span>15</span>
+														</li>
+														<li class="text-warning">
+															Minor
+															<span>15</span>
+														</li>
+														<li class="text-success">
+															Normal
+															<span>15</span>
+														</li>
+													</ul>
+												</td>
+												<td>
+													<p>Building Capacity</p>
+													<div class="d-flex">
+														<span class="text-danger">Electr.</span>
+														<div class="progress mb-2 mx-2">
+															<div class="progress-bar bg-gradient-danger"
+																role="progressbar" style="width: 75%" aria-valuenow="75"
+																aria-valuemin="0" aria-valuemax="100"></div>
+														</div>
+														<span class="text-danger">75%</span>
+													</div>
+													<div class="d-flex">
+														<span class="text-primary">Cooling</span>
+														<div class="progress mb-2 mx-2">
+															<div class="progress-bar bg-gradient-primary"
+																role="progressbar" style="width: 57%" aria-valuenow="57"
+																aria-valuemin="0" aria-valuemax="100"></div>
+														</div>
+														<span class="text-primary">57%</span>
+													</div>
+												</td>
+												<td style="width: 250px; text-align: center;">
+													<div id="radial-chart-table2" class="chart-in-table"></div>
+													<p class="mb-0 text-primary">Ocupancy Level</p>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													Building 3
+												</td>
+												<td>
+													<p>Fault Type</p>
+													<ul class="nav fault-items">
+														<li class="text-danger">
+															Critical
+															<span>15</span>
+														</li>
+														<li class="text-warning">
+															Minor
+															<span>15</span>
+														</li>
+														<li class="text-success">
+															Normal
+															<span>15</span>
+														</li>
+													</ul>
+												</td>
+												<td>
+													<p>Building Capacity</p>
+													<div class="d-flex">
+														<span class="text-danger">Electr.</span>
+														<div class="progress mb-2 mx-2">
+															<div class="progress-bar bg-gradient-danger"
+																role="progressbar" style="width: 75%" aria-valuenow="75"
+																aria-valuemin="0" aria-valuemax="100"></div>
+														</div>
+														<span class="text-danger">75%</span>
+													</div>
+													<div class="d-flex">
+														<span class="text-primary">Cooling</span>
+														<div class="progress mb-2 mx-2">
+															<div class="progress-bar bg-gradient-primary"
+																role="progressbar" style="width: 57%" aria-valuenow="57"
+																aria-valuemin="0" aria-valuemax="100"></div>
+														</div>
+														<span class="text-primary">57%</span>
+													</div>
+												</td>
+												<td style="width: 250px; text-align: center;">
+													<div id="radial-chart-table3" class="chart-in-table"></div>
+													<p class="mb-0 text-primary">Ocupancy Level</p>
+												</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+								<div class="widget-content widget-content-area mb-1">
+									<div class="table-scroll">
+										<table class="table table-borderless">
+											<tr>
+												<td>
+													Booster Bump
+												</td>
+												<td>
+													<p>Run Time</p>
+													<b>2600 Hrs</b>
+												</td>
+												<td>
+													<p>Total Fault</p>
+													<b class="text-danger">6</b>
+												</td>
+												<td>
+													<p>Equipment Age</p>
+													<div class="d-flex">
+														<div class="progress mb-2">
+															<div class="progress-bar bg-gradient-primary"
+																role="progressbar" style="width: 57%" aria-valuenow="57"
+																aria-valuemin="0" aria-valuemax="100"></div>
+														</div>
+														<span class="text-success">57%</span>
+													</div>
+												</td>
+												<td style="width: 250px;">
+													<div id="radial-chart-table" class="chart-in-table"></div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													Booster Pumb
+												</td>
+												<td>
+													<p>Run Time</p>
+													<b>2600 Hrs</b>
+												</td>
+												<td>
+													<p>Total Fault</p>
+													<b class="text-danger">6</b>
+												</td>
+												<td>
+													<p>Equipment Age</p>
+													<div class="progress mb-2">
+														<div class="progress-bar bg-gradient-primary" role="progressbar"
+															style="width: 57%" aria-valuenow="57" aria-valuemin="0"
+															aria-valuemax="100"></div>
+													</div>
+												</td>
+												<td style="width: 250px;">
+													<div id="radial-chart-table2" class="chart-in-table"></div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													Booster Pumb
+												</td>
+												<td>
+													<p>Run Time</p>
+													<b>2600 Hrs</b>
+												</td>
+												<td>
+													<p>Total Fault</p>
+													<b class="text-danger">6</b>
+												</td>
+												<td>
+													<p>Building Capacity</p>
+													<div class="progress mb-2">
+														<div class="progress-bar bg-gradient-primary" role="progressbar"
+															style="width: 57%" aria-valuenow="57" aria-valuemin="0"
+															aria-valuemax="100"></div>
+													</div>
+												</td>
+												<td style="width: 250px;">
+													<div id="radial-chart-table3" class="chart-in-table"></div>
+												</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+								<div class="widget-content widget-content-area mb-1">
+
+									<figure style="height: 435px;">
+										<!-- <img src="assets/img/map-city.jpg" alt="" class="img-fluid"
+											style="object-fit: cover; width: 100%; height: 100%; object-position: bottom;" /> -->
+											<video muted loop autoplay style="width: 100%; height: 100%; object-fit: fill;">
+												<source src="assets/videos/map-city1.mp4" type="video/mp4" />
+											</video>
+									</figure>
+									
+								</div>
+							</div>
+							<!-- <div class="col-xl-3 col-lg-4 col-md-4 col-sm-8 col-12">
+								
+							</div> -->
+
+							<div class="col-xl-3 col-lg-4 col-md-12 col-12 px-1">
+								<div class="widget-content widget-content-area mb-1">
+									<h5>EUI</h5>
+									<div id="chart-bar"></div>
+									<h5>CUI</h5>
+									<div id="chart-bar2"></div>
+								</div>
+								<div class="widget-content widget-content-area mb-2">
+									<div id="chart-optionsAreaGradiend" class=""></div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+
+				</div>
+
+			</div>
+		</div>
+		<!--  END CONTENT PART  -->
+			</div>
+		</div>
+
+		
+
+	</div>
+	<!-- END MAIN CONTAINER -->
+
+	<!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
+	<script src="assets/js/libs/jquery-3.1.1.min.js"></script>
+	<script src="bootstrap/js/popper.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+	<script src="assets/js/app.js"></script>
+	<script>
+		$(document).ready(function () {
+			App.init();
+		});
+	</script>
+	<script src="assets/js/custom.js"></script>
+	<!-- END GLOBAL MANDATORY SCRIPTS -->
+
+	<!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+	<script src="plugins/apex/apexcharts.min.js"></script>
+	<script src="assets/js/dashboard/dash_2.js"></script>
+	<!-- <script src="assets/js/scrollspyNav.js"></script> -->
+	<script src="plugins/apex/custom-apexcharts.js"></script>
+	<!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+	<script>
+
+		var options = {
+			series: [{
+				name: "SAMPLE A",
+				data: [
+					[16.4, 5.4], [21.7, 2], [25.4, 3], [19, 2], [10.9, 1], [13.6, 3.2], [10.9, 7.4], [10.9, 0], [10.9, 8.2], [16.4, 0],]
+			}, {
+				name: "SAMPLE B",
+				data: [
+					[36.4, 13.4], [1.7, 11], [5.4, 8], [9, 17], [1.9, 4], [3.6, 12.2], [1.9, 14.4], [1.9, 9], [1.9, 13.2], [1.4, 7],]
+			}, {
+				name: "SAMPLE C",
+				data: [
+					[21.7, 3], [23.6, 3.5], [24.6, 3], [29.9, 3], [21.7, 20], [23, 2], [10.9, 3], [28, 4], [27.1, 0.3], [16.4, 4], [13.6, 0],]
+			}],
+			chart: {
+				height: 300,
+				type: 'scatter',
+				/* zoom: {
+				  enabled: true,
+				  type: 'xy'
+				} */
+			},
+			title: {
+				text: 'Cars by Fuel Break Down',
+				align: 'left'
+			},
+
+			xaxis: {
+				tickAmount: 10,
+				labels: {
+					formatter: function (val) {
+						return parseFloat(val).toFixed(1)
+					}
+				},
+				show: false
+			},
+			yaxis: {
+				tickAmount: 7,
+				show: false
+			},
+		};
+
+		var chart = new ApexCharts(document.querySelector("#bubble-chart"), options);
+		chart.render();
+
+		// area charts
+		var options1 = {
+			series: [{
+				name: 'Carbon',
+				data: [51, 52, 45, 51, 42, 35, 31]
+			}, {
+				name: 'EU',
+				data: [45, 45, 45, 45, 45, 45, 45]
+			}],
+			chart: {
+				height: 300,
+				type: 'area',
+				zoom: {
+					enabled: false
+				}
+			},
+			dataLabels: {
+				enabled: false
+			},
+			title: {
+				text: 'Carbon Emission Vs EU CO2',
+				align: 'left',
+			},
+			stroke: {
+				curve: 'smooth'
+			},
+			xaxis: {
+				//   type: 'datetime',
+				categories: ["1", "2", "3", "4", "5", "6", "7"]
+			},
+			tooltip: {
+				x: {
+					format: 'dd/MM/yy HH:mm'
+				},
+			},
+		};
+
+		var chart1 = new ApexCharts(document.querySelector("#chart-area"), options1);
+		chart1.render();
+
+		// line dotted chart
+		var options2 = {
+			series: [{
+				name: "Cars",
+				data: [1200, 5000, 10000, 20000, 18000, 10000, 7000, 3000]
+			}],
+			chart: {
+				height: 300,
+				type: 'line',
+				zoom: {
+					enabled: false
+				}
+			},
+			dataLabels: {
+				enabled: false
+			},
+			stroke: {
+				curve: 'straight'
+			},
+			title: {
+				text: 'Daily Cars Traffic',
+				align: 'left'
+			},
+			grid: {
+				row: {
+					colors: ['transparent', 'transparent'], // takes an array which will be repeated on columns
+					opacity: 0.5
+				},
+			},
+			xaxis: {
+				categories: ['01', '04', '08', '12', '16', '18', '22', '24'],
+			},
+		};
+
+		var chart2 = new ApexCharts(document.querySelector("#chart-line-dotted1"), options2);
+		chart2.render();
+
+		var optionsStacked = {
+			colors : ['#018725', '#4576b5'],
+			series: [{
+				name: 'Petrol Cars',
+				data: [44, 55, 41, 67, 22, 43],
+			}, {
+				name: 'EV cars',
+				data: [13, 23, 20, 8, 13, 27]
+			},],
+			chart: {
+				type: 'bar',
+				height: 300,
+				stacked: true,
+				toolbar: {
+					show: true
+				},
+				zoom: {
+					enabled: true
+				}
+			},
+			responsive: [{
+				breakpoint: 480,
+				options: {
+					legend: {
+						position: 'bottom',
+						offsetX: -10,
+						offsetY: 0
+					}
+				}
+			}],
+			plotOptions: {
+				bar: {
+					horizontal: false,
+					borderRadius: 10
+				},
+			},
+			title: {
+				text: 'Total Number of Cars',
+				align: 'left'
+			},
+			xaxis: {
+				//   type: 'datetime',
+				categories: ['Fri', 'Sat', 'Mon', 'Tues',
+					'Wend', 'Thr'
+				],
+				//   Friday: 680, Saturday :870, Monday: 1420, Tues: 1050, Wend:1360, Thursday:990
+			},
+			/* legend: {
+			  position: 'right',
+			  offsetY: 40
+			}, */
+			fill: {
+				opacity: 1,
+			},
+			
+		};
+
+		var chartStacked = new ApexCharts(document.querySelector("#chart-stacked"), optionsStacked);
+		chartStacked.render();
+
+		oprionStacked2 = {
+			series: [{
+				name: 'Inflation',
+				data: [2.3, 3.1, 4.0, 10.1, 4.0, 3.6, 3.2]
+			}],
+			chart: {
+				height: 300,
+				type: 'bar',
+			},
+			plotOptions: {
+				bar: {
+					borderRadius: 10,
+					dataLabels: {
+						position: 'top', // top, center, bottom
+					},
+				}
+			},
+			dataLabels: {
+				enabled: true,
+				formatter: function (val) {
+					// return val + "%";
+				},
+				offsetY: -20,
+				style: {
+					fontSize: '12px',
+					colors: ["#304758"]
+				}
+			},
+
+			xaxis: {
+				categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+				position: 'bottom',
+				axisBorder: {
+					show: false
+				},
+				axisTicks: {
+					show: false
+				},
+				crosshairs: {
+					fill: {
+						type: 'gradient',
+						gradient: {
+							colorFrom: '#D8E3F0',
+							colorTo: '#BED1E6',
+							stops: [0, 100],
+							opacityFrom: 0.4,
+							opacityTo: 0.5,
+						}
+					}
+				},
+				tooltip: {
+					enabled: true,
+				}
+			},
+			yaxis: {
+				axisBorder: {
+					show: false
+				},
+				axisTicks: {
+					show: false,
+				},
+				labels: {
+					show: false,
+					formatter: function (val) {
+						return val + "%";
+					}
+				}
+
+			},
+			title: {
+				text: 'Carbon Foot Print',
+				/* floating: true,
+				offsetY: 330, */
+				align: 'left',
+				/* style: {
+				  color: '#444'
+				} */
+			},
+			xaxis: {
+				//   type: 'datetime',
+				categories: ['Fri', 'Sat', 'Mon', 'Tues', 'Wend', 'Thr'
+				],
+				//   Friday: 680, Saturday :870, Monday: 1420, Tues: 1050, Wend:1360, Thursday:990
+			},
+		};
+
+		var chartStacked2 = new ApexCharts(document.querySelector("#chart-stacked2"), oprionStacked2);
+		chartStacked2.render();
+
+
+		var optionsPie = {
+			series: [560, 450, 320, 250],
+			chart: {
+				height: 170,
+				type: 'pie',
+			},
+			// Toyota: 560, Nissan:450, mercedes:320, BMW:250
+			labels: ['Toyota', 'Nissan', 'mercedes', 'BMW'],
+			title: {
+				text: 'Daily Car Brand Name',
+				align: 'left'
+			},
+			responsive: [{
+				breakpoint: 480,
+				options: {
+					chart: {
+						height: 200,
+					},
+					legend: {
+						position: 'bottom'
+					}
+				}
+			}]
+		};
+
+		var chartPie = new ApexCharts(document.querySelector("#chart-pie1"), optionsPie);
+		chartPie.render();
+
+
+		var optionsAreaGradiend = {
+			series: [
+				{
+					data: [10, 20, 15, 30, 35, 30, 45, 59, 30, 35, 25, 29, 15]
+				}
+			],
+			chart: {
+				type: "area",
+				height: 170,
+				background: "transparent",
+				dropShadow: {
+					enabled: true,
+					color: "#000"
+				},
+				zoom: {
+					enabled: false
+				}
+			},
+			dataLabels: {
+				enabled: false
+			},
+			markers: {
+				colors: ["#FFFFFF"]
+			},
+			stroke: {
+				curve: "smooth",
+				width: 3,
+				fill: {
+					type: "gradient",
+					gradient: {
+						type: "horizontal",
+						colorStops: [
+							[
+								{
+									offset: 0,
+									color: "#0085FF",
+									opacity: 1
+								},
+								{
+									offset: 33,
+									color: "#FF2E92",
+									opacity: 1
+								},
+								{
+									offset: 80,
+									color: "#FFAC2F",
+									opacity: 1
+								},
+								{
+									offset: 99,
+									color: "#FFFFFF",
+									opacity: 1
+								}
+							]
+						]
+					}
+				}
+			},
+			fill: {
+				type: "gradient",
+				gradient: {
+					shadeIntensity: 1,
+					type: "vertical",
+					colorStops: [
+						[
+							{
+								offset: 0,
+								color: "#F48116",
+								opacity: 1.0
+							},
+							{
+								offset: 70,
+								color: "#6510F8",
+								opacity: 0.2
+							},
+							{
+								offset: 97,
+								color: "#6510F8",
+								opacity: 0.0
+							}
+						]
+					]
+				}
+			},
+			xaxis: {
+				axisBorder: {
+					show: false
+				},
+				axisTicks: {
+					show: false
+				},
+				labels: {
+					style: {
+						colors: "#aaa"
+					}
+				}
+			},
+			yaxis: {
+				labels: {
+					show: false
+				}
+			},
+			grid: {
+				borderColor: "#222226"
+			},
+			legend: {
+				horizontalAlign: "left"
+			},
+		};
+
+		var chartoptionsAreaGradiend = new ApexCharts(document.querySelector("#chart-optionsAreaGradiend1"), optionsAreaGradiend);
+		chartoptionsAreaGradiend.render();
+
+
+	</script>
+
+	<script src="https://d3js.org/d3.v3.min.js"></script>
+
+	<script>
+		/**
+ * D3Bubbles
+ *
+ * Generate Bubbles chart
+ * Helps you bring data to life using HTML, SVG and CSS.
+ *
+ * @param {Object} settings [description]
+ *
+ * @author      Kevin WENGER <contact@kevin-wenger.ch>
+ * @license     http://www.php.net/license/3_01.txt  PHP License 3.01
+ * @version     1.0.5
+ *
+ */
+
+		// Dependencies
+		if ("undefined" == typeof jQuery) throw new Error("D3Bubbles's JavaScript requires jQuery");
+		if ("undefined" == typeof d3) throw new Error("D3Bubbles's JavaScript requires D3.js");
+
+		D3Bubbles = function (params) {
+
+			// ************************************************************************
+			// PRIVATE VARIABLES
+			// ONLY PRIVELEGED METHODS MAY VIEW/EDIT/INVOKE
+			// ***********************************************************************
+			var options = params;
+			var that = this;
+
+			var default_settings = {
+				width: 'auto',
+				height: 'auto',
+				wrapper: null,
+				container: null,
+				data: null,
+				bubbles: {
+					bubbles_per_px: 0.02,
+					bubbles_max: 'auto',
+				},
+				radius: {
+					min: 28,
+					max: 65,
+				},
+				colors: {
+					bubbles: ['#c9ad7d', '#e0c18c'],
+					texts: ['#FFF'],
+				},
+				features: {
+					dragmove: true,
+					overflow: false,
+					fit_texts: true,
+					responsive: true,
+				},
+			};
+
+
+			// standard variables accessible to
+			// the rest of the functions inside Bubbles
+			var nodes = null;
+
+			// these will be set in _prepare
+			var svgContainer = null;
+			var circles = null;
+
+			// largest size for our bubbles
+			// radius scale will be used to size our bubbles
+			var radius = null;
+
+			// Overwriteable settings
+			var settings = null
+
+			var m = 1;
+			var padding = 100;
+
+			var force = d3.layout.force();
+			var x = null;
+
+			// ************************************************************************
+			// PUBLIC PROPERTIES -- ANYONE MAY READ/WRITE
+			// ************************************************************************
+			this.width = null;
+			this.height = null;
+
+			this.bubbles_per_px = null;
+			this.bubbles_max = null;
+
+			this.radius_min = null;
+			this.radius_max = null;
+
+			this.colors_bubbles = null;
+			this.colors_min_bubbles = null;
+			this.colors_max_bubbles = null;
+			this.colors_texts = null;
+			this.colors_min_texts = null;
+			this.colors_max_texts = null;
+
+			this.features_dragmove = null;
+			this.features_overflow = null;
+			this.features_fit_texts = null;
+
+			// ************************************************************************
+			// PRIVILEGED METHODS
+			// MAY BE INVOKED PUBLICLY AND MAY ACCESS PRIVATE ITEMS
+			// ************************************************************************
+
+			/**
+			 * [visualize description]
+			 * @param  {Objects}   data     [raw data in array of object]
+			 * @param  {Function} callback  [initalise events on plot after rendering element]
+			 */
+			this.visualize = function () {
+				var drawed = 0;
+				nodes = settings.data;
+
+				// first, get the data
+				nodes = settings.data.slice(0, that.bubbles_max);
+
+				// setup the radius scale's domain now that
+				// we have some data
+				var min_radius = d3.min(nodes, function (d) {
+					return parseInt(d.radius);
+				});
+				var max_radius = d3.max(nodes, function (d) {
+					return parseInt(d.radius);
+				});
+				radius = d3.scale.linear().domain([min_radius, max_radius]).range([that.radius_min, that.radius_max]);
+
+				// setup the colors scale's domain
+				var bubbles_colors = function (radius) {
+					return that.colors_min_bubbles;
+				}
+				if (that.colors_max_bubbles != null) {
+					bubbles_colors = d3.scale.linear()
+						.domain([that.radius_min, that.radius_max])
+						.range([that.colors_min_bubbles, that.colors_max_bubbles]);
+				}
+				var texts_colors = function (radius) {
+					return that.colors_min_texts;
+				}
+				if (that.colors_max_texts != null) {
+					texts_colors = d3.scale.linear()
+						.domain([that.radius_min, that.radius_max])
+						.range([that.colors_min_texts, that.colors_max_texts]);
+				}
+
+				// tweaks our dataset to get it into the
+				// format we want
+				nodes.forEach(function (item, index) {
+					var i = Math.floor(Math.random() * m); //color
+					var v = (i + 1) / m * -Math.log(Math.random()); //value
+					// item.color = color(i);
+					item.cx = x(i);
+					item.cy = that.height / 2;
+					item.count = item.radius;
+					item.radius = radius(item.radius);
+					item.name = item.name;
+					item.id = Math.random().toString(36).substr(2, 9);
+				});
+
+				if (that.features_dragmove) {
+					// Initalise drag Event
+					var drag = force.drag()
+						.on("dragstart", function (d) {
+							var ref = this;
+							var container = document.querySelector(settings.wrapper);
+							// definition of events
+							var event = new CustomEvent('dragstart', {
+								bubble: ref,
+								data: d,
+							});
+							!container.dispatchEvent(event);
+						})
+						.on('drag', dragmove)
+						.on("dragend", function (d) {
+							var ref = this;
+							var container = document.querySelector(settings.wrapper);
+							// definition of events
+							var event = new CustomEvent('dragend', {
+								bubble: ref,
+								data: d,
+							});
+							!container.dispatchEvent(event);
+						});
+				}
+
+				// ---
+				// The force variable is the force layout controlling the bubbles
+				// here we disable gravity and charge as we implement custom versions
+				// of gravity and collisions for this visualization
+				// ---
+				force
+					.size([that.width, that.height])
+					.gravity(0)
+					.charge(0)
+					.nodes(nodes)
+					.on('tick', tick)
+					.start();
+
+				// ---
+				// circles will be used to group the bubbles
+				// ---
+				circles = svgContainer.selectAll('g')
+					.data(nodes)
+					.enter()
+					.append('g')
+					.attr('data-label-text', function (d) { return d.name })
+					.attr('data-label-count', function (d) { return d.label })
+					.attr('id', function (d) { return 'bubble-wrapper-' + d.id })
+					.attr('class', 'bubble-wrapper')
+					.attr('cx', function (d) { return d.cx })
+					.attr('cy', function (d) { return d.cy })
+					.attr('transform', function (d) { return 'translate(' + d.x + ',' + d.y + ')'; });
+				// .call(drag);
+
+				if (that.features_dragmove) {
+					circles.call(drag);
+				}
+
+				// ---
+				// Add our Circle
+				// ---
+				var circle = circles
+					.append('circle')
+					.attr('class', function (d) {
+						return 'bubble ' + d.type;
+					})
+					.attr('fill', function (d) { return bubbles_colors(d.radius) })
+					.attr('r', function (d) { return d.radius });
+
+
+
+				// ---
+				// Add text
+				// ---
+				var text = circles
+					.append('text')
+					.attr('class', 'term')
+					.attr('dy', '.3em')
+					.attr('fill', function (d) { return texts_colors(d.radius) })
+					.style('text-anchor', 'middle')
+					.text(function (d) {
+						var ref = this;
+						var container = document.querySelector(settings.wrapper);
+
+						// Callback event after rendering a bubble
+						drawed++;
+
+						// Add Event mouseover
+						ref.addEventListener("mouseleave", function () {
+							// definition of events
+							var event = new CustomEvent('leave', {
+								bubble: ref,
+								data: d,
+							});
+							!container.dispatchEvent(event);
+						});
+
+						// Add Event mouseout
+						ref.addEventListener("mouseenter", function () {
+							// definition of events
+							var event = new CustomEvent('enter', {
+								bubble: ref,
+								data: d,
+							});
+							!container.dispatchEvent(event);
+						});
+
+						// Event after rendering all bubbles
+						if (drawed >= that.bubbles_max) {
+							// definition of events
+							var event = new CustomEvent('complete');
+							!container.dispatchEvent(event);
+						}
+
+						return d.name.substring(0, d.radius / 3);
+					})
+					.style('font-size', '10px')
+					.style('font-size', function (d) {
+						var size = 10;
+						if (that.features_fit_texts) {
+							//This is what gives it increased size of text
+							size = (2 * d.radius - 10) / this.getComputedTextLength() * 10;
+						}
+						return size + 'px';
+					});
+			}
+
+			this.init = function () {
+				// window.addEventListener('resize', _resize);
+
+				settings = $.extend(default_settings, options); // Overwrite settings
+
+				// Initalise public properties with default settings and sended parameters
+				this.width = settings.width;
+				this.height = settings.height;
+
+				this.bubbles_per_px = settings.bubbles.bubbles_per_px;
+				// Must be an Integer because using slice function with this value
+				this.bubbles_max = settings.bubbles.bubbles_max;
+
+				this.radius_min = settings.radius.min;
+				this.radius_max = settings.radius.max;
+
+				if (settings.colors.bubbles.length == 1) {
+					this.colors_min_bubbles = settings.colors.bubbles[0];
+				} else if (settings.colors.bubbles.length > 1) {
+					this.colors_min_bubbles = settings.colors.bubbles[0];
+					this.colors_max_bubbles = settings.colors.bubbles[1];
+				}
+				if (settings.colors.texts.length == 1) {
+					this.colors_min_texts = settings.colors.texts[0];
+				} else if (settings.colors.texts.length > 1) {
+					this.colors_min_texts = settings.colors.texts[0];
+					this.colors_max_texts = settings.colors.texts[1];
+				}
+
+				this.features_dragmove = settings.features.dragmove;
+				this.features_overflow = settings.features.overflow;
+				this.features_fit_texts = settings.features.fit_texts;
+				this.features_responsive = settings.features.responsive;
+
+				_prepare();
+			}
+
+			this.redraw = function () {
+				_prepare();
+				this.visualize();
+			}
+
+			// ************************************************************************
+			// PRIVATE METHODES
+			// ONLY PRIVELEGED METHODS MAY VIEW/EDIT/INVOKE
+			// ***********************************************************************
+
+			/*    function _resize(){
+					if (!running) {
+						running = true;
+			
+						if (window.requestAnimationFrame) {
+							window.requestAnimationFrame(that.redraw());
+						} else {
+							setTimeout(that.redraw(), 66);
+						}
+					}
+				}*/
+
+			/**
+			 * A fancy way to setup svg element
+			 */
+			function _prepare() {
+
+				if (that.width != 'auto' && that.features_responsive) {
+					console.warn('D3Bubbles\'s Warning - "responsive" enable but width != "auto".');
+					that.width = 'auto';
+				}
+
+				if (that.width == 'auto') {
+					that.width = $(settings.container).width();
+				}
+
+				if (that.height == 'auto') {
+					that.height = $(settings.container).height();
+				}
+
+				if (that.bubbles_max == 'auto') {
+					that.bubbles_max = parseInt(that.bubbles_per_px * that.width);
+				}
+				if (that.bubbles_max >= settings.data.length || that.bubbles_max <= 0) {
+					that.bubbles_max = settings.data.length;
+				} else {
+					that.bubbles_max = parseInt(that.bubbles_max);
+				}
+
+				x = d3.scale.ordinal().domain(d3.range(m)).rangePoints([0, that.width], 1);
+
+				// Must clean area before drawing plot
+				$(settings.container).html('');
+
+				// setup svg element
+				svgContainer = d3.select(settings.container).append('svg:svg')
+					.attr('width', that.width)
+					.attr('height', that.height)
+					.attr('class', 'D3Bubbles');
+			}
+
+			/**
+			 * Drag Event on Bubble
+			 * Limite drag mouvement with container width and height
+			 * @param  {Object} d [Dragged element]
+			 */
+			function dragmove(d) {
+				var ref = this;
+				var container = document.querySelector(settings.wrapper);
+				// definition of events
+				var event = new CustomEvent('drag', {
+					bubble: ref,
+					data: d,
+				});
+				!container.dispatchEvent(event);
+
+				if (d.py > that.height) d.py = that.height;
+				if (d.py < 0) d.py = 0;
+
+				if (d.px > that.width) d.px = that.width;
+				if (d.px < 0) d.px = 0;
+			}
+
+
+			/**
+			 * tick callback function will be executed for every iteration of the force simulation
+			 * - moves force nodes towards their destinations
+			 * - deals with collisions of force nodes
+			 * - updates visual bubbles to reflect new force node locations
+			 * @param  {Object} e [tick]
+			 */
+			function tick(e) {
+				// Most of the work is done by the gravity and collide functions
+				circles.each(gravity(.5 * e.alpha))
+					.each(collide(.5))
+					.attr('cx', function (d) {
+						return d.x;
+					})
+					.attr('cy', function (d) {
+						return d.y;
+					})
+					.attr('transform', function (d) {
+						return 'translate(' + d.x + ',' + d.y + ')';
+					});
+			}
+
+			/**
+			 * Custom gravity to skew the bubble placement
+			 * @param  {float} alpha  [affect how much to push towards the horizontal or vertical]
+			 * @return {Function}     [modifies the x and y of a node]
+			 */
+			function gravity(alpha) {
+				return function (d) {
+					var r = d.radius + 4;
+					d.y += (d.cy - d.y) * alpha;
+					d.x += (d.cx - d.x) * alpha / 8;
+
+					if (!that.features_overflow) {
+						if (d.x - r < 0) {
+							d.x = r;
+						} else {
+							if (d.x + r > that.width) {
+								d.x = that.width - r;
+							}
+						} if (d.y - r < 0) {
+							d.y = r;
+						} else {
+							if (d.y + r > that.height) {
+								d.y = that.height - r;
+							}
+						}
+					}
+				}
+			};
+
+			/**
+			 * custom collision function to prevent nodes from touching
+			 * we use quadtree to speed up implementation
+			 * @param  {float} alpha    [affect how much to push towards the horizontal or vertical]
+			 * @return {Function}       [modifies the x and y of a node]
+			 */
+			function collide(alpha) {
+				var quadtree = d3.geom.quadtree(nodes);
+				return function (d) {
+					var r = d.radius + radius.domain()[1] + padding,
+						nx1 = d.x - r,
+						nx2 = d.x + r,
+						ny1 = d.y - r,
+						ny2 = d.y + r;
+					quadtree.visit(function (quad, x1, y1, x2, y2) {
+						if (quad.point && (quad.point !== d)) {
+							var x = d.x - quad.point.x;
+							var y = d.y - quad.point.y;
+							var l = Math.sqrt(x * x + y * y);
+							var r = d.radius + quad.point.radius;
+							if (l < r) {
+								l = (l - r) / l * alpha;
+								d.x -= x *= l;
+								d.y -= y *= l;
+								quad.point.x += x;
+								quad.point.y += y;
+							}
+						}
+						return x1 > nx2 || x2 < nx1 || y1 > ny2 || y2 < ny1;
+					});
+				};
+			}
+
+		};
+
+		// ************************************************************************
+		// PUBLIC METHODS -- ANYONE MAY READ/WRITE
+		// ************************************************************************
+
+
+		/**
+		 * Polyfill - detect working CustomEvent constructor
+		 */
+		(function () {
+			if (typeof CustomEvent === 'function') {
+				function CustomEvent(event, params) {
+					params = params || { bubbles: false, cancelable: false, detail: undefined };
+					var evt = document.createEvent('CustomEvent');
+					evt.initCustomEvent(event, params.bubbles, params.cancelable, params.detail);
+					return evt;
+				};
+
+				CustomEvent.prototype = window.Event.prototype;
+				window.CustomEvent = CustomEvent;
+			}
+
+		})();
+
+		var data = [
+			{ name: "Petrol 320", radius: 320, label: "320 posts", type: "hashtag" },
+			{ name: "Diesel 50", radius: 50, label: "67 posts", type: "keyword" },
+			{ name: "Electric 120", radius: 120, label: "53 posts", type: "hashtag" },
+			{ name: "Hybrid 68", radius: 68, label: "186 posts", type: "hashtag" },
+		];
+
+		var bubbles = new D3Bubbles({
+			width: 'auto',
+			height: 300,
+			wrapper: '#bubbles',
+			container: '#bubbles .plot',
+			bubbles: {
+				bubbles_per_px: 0.05,
+				bubbles_max: 'auto',
+			},
+			radius: {
+				min: 28,
+				max: 65
+			},
+			colors: {
+				bubbles: ['rgba(255, 43, 43)','rgba(0, 143, 251)', 'rgba(255, 43, 75)', 'rgba(255, 102, 0)',],
+				texts: ['#FFF', '#FFF', '#FFF', '#FFF'],
+			},
+			features: {
+				dragmove: true,
+				overflow: false,
+				fit_texts: true,
+			},
+			data: data
+		});
+
+		bubbles.init();
+		bubbles.visualize();
+
+
+	</script>
+	
+	<script>
+		var optionspage2 = {
+			series: [70],
+			chart: {
+				height: 150,
+				type: 'radialBar',
+			},
+			plotOptions: {
+				radialBar: {
+					hollow: {
+						size: '70%',
+					}
+				},
+			},
+			labels: ['860 Occ'],
+		};
+
+		var chart = new ApexCharts(document.querySelector("#radial-chart-table"), optionspage2);
+		chart.render();
+
+		var chart2 = new ApexCharts(document.querySelector("#radial-chart-table2"), optionspage2);
+		chart2.render();
+
+		var chart3 = new ApexCharts(document.querySelector("#radial-chart-table3"), optionspage2);
+		chart3.render();
+
+		//Bar Chart
+		var optionspage222 = {
+			series: [{
+				name: 'Buildings',
+				data: [3, 2, 5, 7, 3,]
+			}],
+			chart: {
+				type: 'bar',
+				height: 230
+			},
+			title: {
+				text: 'Energy Utilization Index',
+				posiiton: 'left'
+			},
+			plotOptions: {
+				bar: {
+					horizontal: true,
+					dataLabels: {
+						position: 'top',
+					},
+				}
+			},
+			dataLabels: {
+				enabled: true,
+				offsetX: -6,
+				style: {
+					fontSize: '12px',
+					colors: ['#fff']
+				}
+			},
+			stroke: {
+				show: true,
+				width: 1,
+				colors: ['#fff']
+			},
+			tooltip: {
+				shared: true,
+				intersect: false
+			},
+			xaxis: {
+				categories: ['Building 01', 'Building 02', 'Building 03', 'Building 04', 'Building 05'],
+			},
+		};
+
+		var chart = new ApexCharts(document.querySelector("#chart-bar"), optionspage222);
+		chart.render();
+
+		
+		var options22344 = {
+			series: [{
+				name: 'Buildings',
+				data: [0.84, .54, 1.4, 1.96, 0.84,]
+			}],
+			chart: {
+				type: 'bar',
+				height: 230
+			},
+			title: {
+				text: 'Cost Utilization Index',
+				posiiton: 'left'
+			},
+			plotOptions: {
+				bar: {
+					horizontal: true,
+					dataLabels: {
+						position: 'top',
+					},
+				}
+			},
+			dataLabels: {
+				enabled: true,
+				offsetX: -6,
+				style: {
+					fontSize: '12px',
+					colors: ['#fff']
+				}
+			},
+			stroke: {
+				show: true,
+				width: 1,
+				colors: ['#fff']
+			},
+			tooltip: {
+				shared: true,
+				intersect: false
+			},
+			xaxis: {
+				categories: ['Building 01', 'Building 02', 'Building 03', 'Building 04', 'Building 05'],
+			},
+		};
+
+		var chart2 = new ApexCharts(document.querySelector("#chart-bar2"), options22344);
+		chart2.render();
+
+		//------------------
+		// line dotted chart
+		var options2334455 = {
+			series: [{
+				name: "Cars",
+				data: [10, 41, 35, 51, 49, 62, 69, 91, 148]
+			}],
+			chart: {
+				height: 250,
+				type: 'line',
+				zoom: {
+					enabled: false
+				}
+			},
+			dataLabels: {
+				enabled: false
+			},
+			stroke: {
+				curve: 'straight'
+			},
+			title: {
+				text: 'Acumilated Energy Consumption',
+				align: 'left'
+			},
+			grid: {
+				row: {
+					colors: ['transparent', 'transparent'], // takes an array which will be repeated on columns
+					opacity: 0.5
+				},
+			},
+			xaxis: {
+				categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
+			}
+		};
+
+		var chart2 = new ApexCharts(document.querySelector("#chart-line-dotted"), options2334455);
+		chart2.render();
+
+		var optionsAreaGradiend123 = {
+			series: [
+				{
+					data: [10, 20, 15, 30, 35, 30, 45, 59, 30, 35, 25, 29, 15]
+				}
+			],
+			chart: {
+				type: "area",
+				height: 170,
+				background: "transparent",
+				dropShadow: {
+					enabled: true,
+					color: "#000"
+				},
+				zoom: {
+					enabled: false
+				}
+			},
+			title: {
+				text: 'Energy Consumption Forcasted',
+				align: 'left'
+			},
+			dataLabels: {
+				enabled: false
+			},
+			markers: {
+				colors: ["#FFFFFF"]
+			},
+			stroke: {
+				curve: "smooth",
+				width: 3,
+				fill: {
+					type: "gradient",
+					gradient: {
+						type: "horizontal",
+						colorStops: [
+							[
+								{
+									offset: 0,
+									color: "#0085FF",
+									opacity: 1
+								},
+								{
+									offset: 33,
+									color: "#FF2E92",
+									opacity: 1
+								},
+								{
+									offset: 80,
+									color: "#FFAC2F",
+									opacity: 1
+								},
+								{
+									offset: 99,
+									color: "#FFFFFF",
+									opacity: 1
+								}
+							]
+						]
+					}
+				}
+			},
+			fill: {
+				type: "gradient",
+				gradient: {
+					shadeIntensity: 1,
+					type: "vertical",
+					colorStops: [
+						[
+							{
+								offset: 0,
+								color: "#F48116",
+								opacity: 1.0
+							},
+							{
+								offset: 70,
+								color: "#6510F8",
+								opacity: 0.2
+							},
+							{
+								offset: 97,
+								color: "#6510F8",
+								opacity: 0.0
+							}
+						]
+					]
+				}
+			},
+			xaxis: {
+				axisBorder: {
+					show: false
+				},
+				axisTicks: {
+					show: false
+				},
+				labels: {
+					style: {
+						colors: "#aaa"
+					}
+				}
+			},
+			yaxis: {
+				labels: {
+					show: false
+				}
+			},
+			grid: {
+				borderColor: "#222226"
+			},
+			legend: {
+				horizontalAlign: "left"
+			},
+		};
+
+		var chartoptionsAreaGradiend = new ApexCharts(document.querySelector("#chart-optionsAreaGradiend"), optionsAreaGradiend123);
+		chartoptionsAreaGradiend.render();
+
+		var optionsPie1234 = {
+			series: [{
+				data: [25, 14, 8, 4, 2,]
+			}],
+			chart: {
+				type: 'bar',
+				height: 255
+			},
+			plotOptions: {
+				bar: {
+					borderRadius: 4,
+					horizontal: true,
+				}
+			},
+			title: {
+				text: 'Active Energy Equipment',
+				align: 'left'
+			},
+			dataLabels: {
+				enabled: false
+			},
+			xaxis: {
+				categories: ['Chillers (mWh)', 'FAHU (mWh)', 'Package Unites (mWh)', 'Pumps (mWh)', 'CCU (mWh)'
+				],
+			}
+		};
+
+		var chartPie = new ApexCharts(document.querySelector("#chart-pie"), optionsPie1234);
+		chartPie.render();
+	</script>
+
+</body>
+
+</html>
