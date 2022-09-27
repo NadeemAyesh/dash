@@ -322,7 +322,7 @@
 									<ul class="list-of-car-tree list-unstyled">
 										<li>
 											<figure><img src="assets/img/icon/smoke.png" alt="" /></figure> 
-											<p><span>Co2 Emissions: </span> <strong>45 Kg/ Km</strong>
+											<p><span>Co2 Emissions: </span> <strong>45 Kg CO2</strong>
 										</li>
 										<li>
 											<figure><img src="assets/img/icon/tree.png" alt="" /></figure> 
@@ -360,7 +360,7 @@
 												Motorcycle
 											</li>
 											<li>
-												<span class="car-num bg-danger">320</span> 
+												<span class="car-num bg-light-dark">320</span> 
 												<img src="assets/img/cars/sedan.png" alt="" />
 												Sedan
 											</li>
@@ -427,7 +427,7 @@
 								</div>
 							</div>
 							<div class="col-lg col-md-4 px-1">
-								<div class="widget widget-card-four">
+								<div class="widget widget-card-four" style="padding-left: 50px !important;">
 									<div class="widget-content">
 										<h4 class="mb-4" style="font-size: 16px;">Gate Number: #5</h4>
 
@@ -438,6 +438,8 @@
 												</figure>
 												<p>
 													Number Of Cars: <strong>50</strong>
+													<br>
+													Out of Total: <strong>451</strong>
 												</p>
 											</li>
 											<li class="d-flex">
@@ -445,7 +447,7 @@
 													<img src="assets/img/icon/smoke.png" alt="" />
 												</figure>
 												<p>
-													Co2: <strong>50 Kg/Km</strong>
+													Co2: <strong>50 Kg CO2</strong>
 												</p>
 											</li>
 											<li class="d-flex">
@@ -973,7 +975,7 @@
 		chart2.render(); */
 
 		var optionsStacked = {
-			colors : ['#018725', '#4576b5', 'rgb(238, 50, 57)', '#e2a03f'],
+			colors : ['#018725', '#4576b5', '#999999', '#e2a03f'],
 			series: [{
 				name: 'Pickup',
 				data: [44, 55, 41, 67, 22, 43, 41, 21, 43],
@@ -1155,6 +1157,7 @@
 				text: 'Daily Car Brand Name',
 				align: 'left'
 			},
+			colors : ['#018725', '#4576b5', '#999999', '#e2a03f'],
 			/* responsive: [{
 				breakpoint: 480,
 				options: {
@@ -2151,7 +2154,7 @@
 	</script>
 
 	<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly" defer ></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoeQZ-1awidHFyMDlOIEFOPKGMU7qqIT4&callback=initMap&v=weekly" defer ></script>
 
 	<script>
 		let map;
@@ -2203,7 +2206,7 @@
 		function initMap() {
 			map = new google.maps.Map(document.getElementById("map"), {
 				center: { lat: 25.3104135, lng: 51.4282894 },
-				zoom: 14.1,
+				zoom: 14,
 			});
 
 				// Construct the circle for each value in citymap.

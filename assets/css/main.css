@@ -1866,7 +1866,8 @@ table .badge-info, table .badge-secondary, table .badge-dark  {
     margin-bottom: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    padding: 6px 20px
+    padding: 6px 20px;
+    width: 240px !important;
 }
 
 .car-type-list {
@@ -1893,7 +1894,7 @@ table .badge-info, table .badge-secondary, table .badge-dark  {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #c71d6f;
+    background-color: #bfc9d4;
     color: #FFF;
     text-align: center;
     line-height: 40px;
@@ -2292,8 +2293,8 @@ body.light-mode {
 }
 
 .list-of-car-tree figure {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     border: 1px solid #FFF;
     overflow: hidden;
     margin: 15px auto;
