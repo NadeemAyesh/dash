@@ -351,7 +351,7 @@
 							<div class="col-lg-2 px-1">
 								<!-- col-xl-2 col-lg-4 col-md-4 col-sm-4  -->
 								<div class="widget-content widget-content-area mb-2" style=" padding-left: 15px;">
-									<h5 style="font-size: 16px; margin-bottom: 10px">Vehicles Type</h5>
+									<h5 style="font-size: 14px; margin-bottom: 10px">Vehicles Type</h5>
 									<div class="car-type-list">
 										<ul>
 											<li>
@@ -429,7 +429,7 @@
 							<div class="col-lg col-md-4 px-1">
 								<div class="widget widget-card-four" style="padding-left: 50px !important;">
 									<div class="widget-content">
-										<h4 class="mb-4" style="font-size: 16px;">Gate Number#: 5</h4>
+										<h4 class="mb-4" style="font-size: 14px;">Gate Number#: 5</h4>
 
 										<ul class="list-unstyled list-of-types-in-des">
 											<li class="d-flex">
@@ -851,6 +851,15 @@
 	<script src="plugins/apex/custom-apexcharts.js"></script>
 	<!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
 	<script>
+		var today = new Date();
+		var dd = String(today.getDate()).padStart(2, '0');
+		var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+		var yyyy = today.getFullYear();
+
+		today = mm + '/' + dd + '/' + yyyy;
+		document.querySelector(".day-time time").innerHTML = today;
+	</script>
+	<script>
 
 		var options = {
 			series: [{
@@ -1031,7 +1040,7 @@
 			},
 			xaxis: {
 				//   type: 'datetime',
-				categories: [1, 2, 3, 4, 5, 6, 7, 8, 9],
+				categories: ['G-1', 'G-2', 'G-3', 'G-4', 'G-5', 'G-6', 'G-7', 'G-8', 'G-9'],
 				//   Friday: 680, Saturday :870, Monday: 1420, Tues: 1050, Wend:1360, Thursday:990
 			},
 			/* legend: {
@@ -2161,44 +2170,40 @@
 
 		const citymap = {
 			gate1: {
-				center: { lat: 25.302654, lng: 51.431678 },
+				center: { lat: 25.3128508, lng: 51.4198203 },
 				population: 3,
-				content: '4'
+				content: '1'
 			},
-			/* newyork: {
-				center: { lat: 25.3104145, lng: 51.4282899 }, 25.302654, 51.431678
-				population: 36, 25.312009, 51.422331
-			}, */
 			gate2: {
-				center: { lat: 25.304739, lng: 51.437747 }, // 25.304739, 51.437747
+				center: { lat: 25.3179401, lng: 51.4323218 }, // 25.304739, 51.437747
 				population: 4,
 			},
 			gate3: {
-				center: { lat: 25.305672, lng: 51.440114 }, // 25.304768, 51.437844 | 25.305672, 51.440114
+				center: { lat: 25.306671, lng: 51.4429973 }, // 25.304768, 51.437844 | 25.305672, 51.440114
 				population: 2,
 			},
 			gate4: {
-				center: { lat: 25.306412, lng: 51.442542 }, // 25.305125, 51.438997 | 25.306412, 51.442542
+				center: { lat: 25.310974, lng: 51.4146363 }, // 25.305125, 51.438997 | 25.306412, 51.442542
 				population: 1,
 			},
 			gate5: {
-				center: { lat: 25.306248, lng: 51.445242 }, // 25.305811, 51.440817 | 25.306248, 51.445242
+				center: { lat: 25.3135157, lng: 51.4468774 }, // 25.305811, 51.440817 | 25.306248, 51.445242
 				population: 1.2,
 			},
 			gate6: {
-				center: { lat: 25.311899, lng: 51.446547 }, // 25.314452, 51.422216 | 25.311899, 51.446547
+				center: { lat: 25.3065476, lng: 51.4414101 }, // 25.3065476,51.4414101,17z
 				population: 1.2,
 			},
 			gate7: {
-				center: { lat: 25.317193, lng: 51.434561 }, // 25.318759, 51.433959 | 25.317193, 51.434561
+				center: { lat: 25.3049791, lng: 51.4355327 }, // 25.3049791,51.4355327,17z
 				population: 1.2,
 			},
 			gate8: {
-				center: { lat: 25.310335, lng: 51.417082 }, // 25.310708, 51.435353 | 25.310335, 51.417082
+				center: { lat: 25.3067083, lng: 51.4399744 }, // 25.3067083,51.4399744,17z
 				population: 1.2,
 			},
 			gate9: {
-				center: { lat: 25.312009, lng: 51.422331 }, // 25.311600, 51.440224
+				center: { lat: 25.3034035, lng: 51.4296717 }, // 25.311600, 51.440224 25.3034035,51.4296717,17z
 				population: 1.2,
 			},
 		};
