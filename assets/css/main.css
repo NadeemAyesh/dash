@@ -1894,7 +1894,7 @@ table .badge-info, table .badge-secondary, table .badge-dark  {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #bfc9d4;
+    background-color: #bf1900;
     color: #FFF;
     text-align: center;
     line-height: 40px;
@@ -2341,4 +2341,12 @@ body.light-mode {
 .list-of-types-in-des p {
     margin: 0;
     font-size: 16px;
+}
+
+.bg-me {
+    background-color: #b224ef !important;
+}
+
+.bg-me1 {
+    background-color: #c49d00 !important;
 }
