@@ -2304,6 +2304,10 @@ body.light-mode {
     /* margin-right: 15px !important; */
 }
 
+.list-of-types-in-des {
+    margin-bottom: 0;
+}
+
 .list-of-car-tree figure img,
 .list-of-types-in-des figure img {
     width: 90%;
@@ -2326,8 +2330,8 @@ body.light-mode {
 }
 
 .list-of-types-in-des figure {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     border: 1px solid #FFF;
     overflow: hidden;
     /* margin: 15px auto; */

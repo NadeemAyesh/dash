@@ -399,7 +399,7 @@
 
 							<div class="col-lg col-xl-7 px-1">
 								<!-- col-xl-6 col-lg-4 col-md-4 col-sm-4 col-12 -->
-								<div class="widget-content widget-content-area mb-2" style="padding: 15px !important;">
+								<div class="widget-content widget-content-area" style="padding: 15px !important;">
 									<figure class="map-img" style="">
 										<!-- <div class="circle-top pon" style="padding: 25px 0; width: 80px; height: 80px;">269.22 kg/km</div>
 										<div class="circle-top pon-1" style="width: 50px; height: 50px;">73.8 kg/km</div>
@@ -437,9 +437,13 @@
 													<img src="assets/img/icon/car.png" alt="" />
 												</figure>
 												<p class="total-cars">
-													Number Of Cars: <strong>50</strong>
+													Total Cars IN: <strong class="totalin">50</strong>
 													<br>
-													Out of Total: <strong>451</strong>
+													Total Cars Ot: <strong class="totalOut">451</strong>
+													<br>
+													Cars In: <strong class="carsin">451</strong>
+													<br>
+													Cars Out: <strong class="carsOut">451</strong>
 												</p>
 											</li>
 											<li class="d-flex">
@@ -2171,75 +2175,102 @@
 		const citymap = {
 			gate1: {
 				center: { lat: 25.3128508, lng: 51.4198203 },
-				population: 1,
+				population: 3,
 				gateNumber: 1,
-				totalTrees: 15,
-				totalCo2: 42,
-				numberOfCars: 41
+				totalTrees: 231,
+				totalCo2: 5785,
+				totalOfCarsIn: 18496,
+				totalOfCarsOut: 12518,
+				OfCarsOut: 5489,
+				OfCarsIn: 3456,
 			},
 			gate2: {
-				center: { lat: 25.3179401, lng: 51.4323218 }, // 25.304739, 51.437747
-				population: 1,
+				center: { lat: 25.3179401, lng: 51.4323218 },
+				population: 1.5,
 				gateNumber: 2,
-				totalTrees: 17,
-				totalCo2: 32,
-				numberOfCars: 60
+				totalTrees: 93,
+				totalCo2: 2314,
+				totalOfCarsIn: 18496,
+				totalOfCarsOut: 12518,
+				OfCarsOut: 2195,
+				OfCarsIn: 1543,
 			},
 			gate3: {
-				center: { lat: 25.306671, lng: 51.4429973 }, // 25.304768, 51.437844 | 25.305672, 51.440114
-				population: 1,
+				center: { lat: 25.306671, lng: 51.4429973 },
+				population: 1.2,
 				gateNumber: 3,
-				totalTrees: 17,
-				totalCo2: 32,
-				numberOfCars: 40
+				totalTrees: 46,
+				totalCo2: 1156,
+				totalOfCarsIn: 18496,
+				totalOfCarsOut: 12518,
+				OfCarsOut: 1097,
+				OfCarsIn: 850,
 			},
 			gate4: {
-				center: { lat: 25.310974, lng: 51.4146363 }, // 25.305125, 51.438997 | 25.306412, 51.442542
-				population: 1.1,
+				center: { lat: 25.310974, lng: 51.4146363 },
+				population: 3,
 				gateNumber: 4,
-				totalTrees: 15,
-				totalCo2: 42,
-				numberOfCars: 41
+				totalTrees: 208,
+				totalCo2: 5207,
+				totalOfCarsIn: 18496,
+				totalOfCarsOut: 12518,
+				OfCarsOut: 4940,
+				OfCarsIn: 3456,
 			},
 			gate5: {
-				center: { lat: 25.3135157, lng: 51.4468774 }, // 25.305811, 51.440817 | 25.306248, 51.445242
-				population: 2,
+				center: { lat: 25.3135157, lng: 51.4468774 },
+				population: 0.8,
 				gateNumber: 5,
-				totalTrees: 176,
-				totalCo2: 72,
-				numberOfCars: 23
+				totalTrees: 23,
+				totalCo2: 578,
+				totalOfCarsIn: 18496,
+				totalOfCarsOut: 12518,
+				OfCarsOut: 548,
+				OfCarsIn: 245,
 			},
 			gate6: {
-				center: { lat: 25.3065476, lng: 51.4414101 }, // 25.3065476,51.4414101,17z
-				population: 1.2,
+				center: { lat: 25.3065476, lng: 51.4414101 },
+				population: 0.8,
 				gateNumber: 6,
-				totalTrees: 15,
-				totalCo2: 42,
-				numberOfCars: 41
+				totalTrees: 25,
+				totalCo2: 617,
+				totalOfCarsIn: 18496,
+				totalOfCarsOut: 12518,
+				OfCarsOut: 585,
+				OfCarsIn: 345,
 			},
 			gate7: {
-				center: { lat: 25.3049791, lng: 51.4355327 }, // 25.3049791,51.4355327,17z
-				population: 2.5,
+				center: { lat: 25.3049791, lng: 51.4355327 },
+				population: 0.8,
 				gateNumber: 7,
-				totalTrees: 125,
-				totalCo2: 482,
-				numberOfCars: 31
+				totalTrees: 61,
+				totalCo2: 1519,
+				totalOfCarsIn: 18496,
+				totalOfCarsOut: 12518,
+				OfCarsOut: 1441,
+				OfCarsIn: 981,
 			},
 			gate8: {
-				center: { lat: 25.3067083, lng: 51.4399744 }, // 25.3067083,51.4399744,17z
-				population: 1.3,
+				center: { lat: 25.3067083, lng: 51.4399744 },
+				population: 1.2,
 				gateNumber: 8,
-				totalTrees: 15,
-				totalCo2: 42,
-				numberOfCars: 41
+				totalTrees: 51,
+				totalCo2: 1265,
+				totalOfCarsIn: 18496,
+				totalOfCarsOut: 12518,
+				OfCarsOut: 1200,
+				OfCarsIn: 750,
 			},
 			gate9: {
-				center: { lat: 25.3034035, lng: 51.4296717 }, // 25.311600, 51.440224 25.3034035,51.4296717,17z
+				center: { lat: 25.3034035, lng: 51.4296717 },
 				population: 1.2,
 				gateNumber: 9,
-				totalTrees: 15,
-				totalCo2: 42,
-				numberOfCars: 41
+				totalTrees: 42,
+				totalCo2: 1055,
+				totalOfCarsIn: 18496,
+				totalOfCarsOut: 12518,
+				OfCarsOut: 1001,
+				OfCarsIn: 892,
 			},
 		};
 
@@ -2272,12 +2303,15 @@
 
 						setTimeout(() => {
 							/* totalTrees: 15,
-				totalCo2: 42,
-				numberOfCars: 41 */
+							totalCo2: 42,
+							numberOfCars: 41 */
 							$('#GateInfo h4 span').text(cityCircle.gate.gateNumber)
 							$('#GateInfo .total-trees strong').text(cityCircle.gate.totalTrees)
 							$('#GateInfo .total-co2 strong').text(cityCircle.gate.totalCo2)
-							$('#GateInfo .total-cars strong:first-of-type').text(cityCircle.gate.numberOfCars)
+							$('#GateInfo .total-cars strong.totalin').text(cityCircle.gate.numberOfCars)
+							$('#GateInfo .total-cars strong.totalOut').text(cityCircle.gate.numberOfCars)
+							$('#GateInfo .total-cars strong.carsin').text(cityCircle.gate.numberOfCars)
+							$('#GateInfo .total-cars strong.carsOut').text(cityCircle.gate.numberOfCars)
 						}, 300)
 					});
 				}
