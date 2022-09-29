@@ -990,26 +990,25 @@
 		var optionsStacked = {
 			colors : ['#018725', '#4576b5', '#999999', '#e2a03f'],
 			series: [{
-				name: 'Pickup',
-				data: [44, 55, 41, 67, 22, 43, 41, 21, 43],
+				// 4210	1684	842	3789	421	421	750	560	650
+				name: 'Car',
+				data: [4210, 1684, 842, 3789, 421, 421, 750, 560, 650],
 			}, {
-				name: 'SUV',
-				data: [13, 23, 20, 8, 13, 27, 41, 21, 43]
-			},{
-				name: 'Sedan',
-				data: [44, 55, 41, 67, 22, 43, 41, 21, 43],
-			}, {
-				name: 'motocycle',
-				data: [13, 23, 20, 8, 13, 27, 41, 21, 43]
-			}, {
+				// 450	180	90	405	45	51	150	145	75
 				name: 'Truck',
-				data: [13, 23, 20, 8, 13, 27, 41, 21, 43]
+				data: [450, 180, 90, 405, 45, 51, 150, 145, 75]
 			}, {
+				// 400	160	80	360	40	45	451	351	145
+				name: 'Motorbike',
+				data: [400, 160, 80, 360, 40, 45, 451, 351, 145]
+			}, {
+				// 214	85	42	192.6	21	23	45	55	57
 				name: 'Van',
-				data: [13, 23, 20, 8, 13, 27, 41, 21, 43]
+				data: [214, 85, 42, 192.6, 21, 23, 45, 55, 57]
 			}, {
+				// 215	86	43	193.5	21	45	45	89	74
 				name: 'Bus',
-				data: [13, 23, 20, 8, 13, 27, 41, 21, 43]
+				data: [215, 86, 43, 193.5, 21, 45, 45, 89, 74]
 			},],
 			chart: {
 				type: 'bar',
@@ -1044,7 +1043,7 @@
 			},
 			xaxis: {
 				//   type: 'datetime',
-				categories: ['G-1', 'G-2', 'G-3', 'G-4', 'G-5', 'G-6', 'G-7', 'G-8', 'G-9'],
+				categories: ['G-1', 'G-2', 'G-3', 'G-5', 'G-7', 'G-8', 'G-9', 'G-14', 'G-19'],
 				//   Friday: 680, Saturday :870, Monday: 1420, Tues: 1050, Wend:1360, Thursday:990
 			},
 			/* legend: {
@@ -2174,7 +2173,7 @@
 
 		const citymap = {
 			gate1: {
-				center: { lat: 25.3128508, lng: 51.4198203 },
+				center: { lat: 25.3128508, lng: 51.4198203 }, /* 25.3128508,51.4198203,17z */
 				population: 3,
 				gateNumber: 1,
 				totalTrees: 231,
@@ -2206,10 +2205,10 @@
 				OfCarsOut: 1097,
 				OfCarsIn: 850,
 			},
-			gate4: {
-				center: { lat: 25.310974, lng: 51.4146363 },
+			gate5: {
+				center: { lat: 25.3135157, lng: 51.4468774 }, /* 25.3135157,51.4468774,17z */
 				population: 3,
-				gateNumber: 4,
+				gateNumber: 5,
 				totalTrees: 208,
 				totalCo2: 5207,
 				totalOfCarsIn: 18496,
@@ -2217,10 +2216,10 @@
 				OfCarsOut: 4940,
 				OfCarsIn: 3456,
 			},
-			gate5: {
-				center: { lat: 25.3135157, lng: 51.4468774 },
+			gate7: {
+				center: { lat: 25.3049791, lng: 51.4355434 }, /* 25.3049791,51.4355434,17z */
 				population: 0.8,
-				gateNumber: 5,
+				gateNumber: 7,
 				totalTrees: 23,
 				totalCo2: 578,
 				totalOfCarsIn: 18496,
@@ -2228,10 +2227,10 @@
 				OfCarsOut: 548,
 				OfCarsIn: 245,
 			},
-			gate6: {
-				center: { lat: 25.3065476, lng: 51.4414101 },
+			gate8: {
+				center: { lat: 25.3067083, lng: 51.4399744 }, /* 25.3067083,51.4399744,17z */
 				population: 0.8,
-				gateNumber: 6,
+				gateNumber: 8,
 				totalTrees: 25,
 				totalCo2: 617,
 				totalOfCarsIn: 18496,
@@ -2239,10 +2238,10 @@
 				OfCarsOut: 585,
 				OfCarsIn: 345,
 			},
-			gate7: {
-				center: { lat: 25.3049791, lng: 51.4355327 },
+			gate9: {
+				center: { lat: 25.3065476, lng: 51.4414101 }, /* 25.3065476,51.4414101,17z */
 				population: 0.8,
-				gateNumber: 7,
+				gateNumber: 9,
 				totalTrees: 61,
 				totalCo2: 1519,
 				totalOfCarsIn: 18496,
@@ -2250,10 +2249,10 @@
 				OfCarsOut: 1441,
 				OfCarsIn: 981,
 			},
-			gate8: {
-				center: { lat: 25.3067083, lng: 51.4399744 },
+			gate14: {
+				center: { lat: 25.310974, lng: 51.4146363 }, /* 25.310974,51.4146363,17z */
 				population: 1.2,
-				gateNumber: 8,
+				gateNumber: 14,
 				totalTrees: 51,
 				totalCo2: 1265,
 				totalOfCarsIn: 18496,
@@ -2261,10 +2260,10 @@
 				OfCarsOut: 1200,
 				OfCarsIn: 750,
 			},
-			gate9: {
-				center: { lat: 25.3034035, lng: 51.4296717 },
+			gate19: {
+				center: { lat: 25.3034035, lng: 51.4296717 }, /* 25.3034035,51.4296717,17z */
 				population: 1.2,
-				gateNumber: 9,
+				gateNumber: 19,
 				totalTrees: 42,
 				totalCo2: 1055,
 				totalOfCarsIn: 18496,
@@ -2299,7 +2298,7 @@
 
 					google.maps.event.addListener(cityCircle, 'click', function(ev) {
 						console.log(cityCircle)
-						$('#GateInfo').fadeOut().delay(300).fadeIn();
+						// $('#GateInfo').fadeOut().delay(300).fadeIn();
 
 						setTimeout(() => {
 							/* totalTrees: 15,
@@ -2316,7 +2315,7 @@
 							$('#GateInfo .total-cars strong.totalOut').text(cityCircle.gate.totalOfCarsOut)
 							$('#GateInfo .total-cars strong.carsin').text(cityCircle.gate.OfCarsOut)
 							$('#GateInfo .total-cars strong.carsOut').text(cityCircle.gate.OfCarsIn)
-						}, 300)
+						}, 100)
 					});
 				}
 		}
