@@ -427,16 +427,16 @@
 								</div>
 							</div>
 							<div class="col-lg col-md-4 px-1">
-								<div class="widget widget-card-four" style="padding-left: 50px !important;">
-									<div class="widget-content">
-										<h4 class="mb-4" style="font-size: 14px;">Gate Number#: 5</h4>
+								<div class="widget widget-card-four h-100" style="padding-left: 50px !important;">
+									<div class="widget-content" id="GateInfo">
+										<h4 class="mb-4" style="font-size: 14px;">Gate Number#: <span>5</span></h4>
 
 										<ul class="list-unstyled list-of-types-in-des">
 											<li class="d-flex">
 												<figure>
 													<img src="assets/img/icon/car.png" alt="" />
 												</figure>
-												<p>
+												<p class="total-cars">
 													Number Of Cars: <strong>50</strong>
 													<br>
 													Out of Total: <strong>451</strong>
@@ -446,15 +446,15 @@
 												<figure>
 													<img src="assets/img/icon/smoke.png" alt="" />
 												</figure>
-												<p>
-													Co2: <strong>50 Kg CO2</strong>
+												<p class="total-co2">
+													Co2: <strong>50</strong> Kg CO2
 												</p>
 											</li>
 											<li class="d-flex">
 												<figure>
 													<img src="assets/img/icon/tree.png" alt="" />
 												</figure>
-												<p>
+												<p class="total-trees">
 													Trees: <strong>50</strong>
 												</p>
 											</li>
@@ -477,351 +477,351 @@
 			</div>
 			<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
 				<!--  BEGIN CONTENT PART  -->
-		<div id="content" class="main-content">
-			<div class="layout-px-spacing container-fluid">
+				<div id="content" class="main-content">
+					<div class="layout-px-spacing container-fluid">
 
-				<div class="row layout-top-spacing mx-n1">
-					<div class="col-lg-3 col-md-12 px-1">
-						<div class="widget widget-card-four mb-1" style="background-color: darkslategray;">
-							<div class="widget-content">
-								<div class="w-content">
-									<div class="w-info">
-										<h6 class="value">154 <small>MWh</small></h6>
-										<p class="">Total Buildings Energy Consumptions</p>
-									</div>
-									<div class="">
-										<div class="w-icon bg-warning">
-											<i class="bi bi-lightning-fill"></i>
+						<div class="row layout-top-spacing mx-n1">
+							<div class="col-lg-3 col-md-12 px-1">
+								<div class="widget widget-card-four mb-1" style="background-color: darkslategray;">
+									<div class="widget-content">
+										<div class="w-content">
+											<div class="w-info">
+												<h6 class="value">154 <small>MWh</small></h6>
+												<p class="">Total Buildings Energy Consumptions</p>
+											</div>
+											<div class="">
+												<div class="w-icon bg-warning">
+													<i class="bi bi-lightning-fill"></i>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-						</div>
-						<div class="widget widget-card-four mb-1" style="background-color: darkslategray;">
-							<div class="widget-content">
-								<div class="w-content">
-									<div class="w-info">
-										<h6 class="value">1320 <small>Cars/day</small></h6>
-										<p class=""> Total carbon emission from buildings as cars</p>
-									</div>
-									<div class="">
-										<div class="w-icon bg-warning">
-											<i class="bi bi-truck"></i>
+								<div class="widget widget-card-four mb-1" style="background-color: darkslategray;">
+									<div class="widget-content">
+										<div class="w-content">
+											<div class="w-info">
+												<h6 class="value">1320 <small>Cars/day</small></h6>
+												<p class=""> Total carbon emission from buildings as cars</p>
+											</div>
+											<div class="">
+												<div class="w-icon bg-warning">
+													<i class="bi bi-truck"></i>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-						</div>
-						<div class="widget widget-card-four mb-1" style="background-color: darkslategray;">
-							<div class="widget-content">
-								<div class="w-content">
-									<div class="w-info">
-										<h6 class="value">2450 <small>Cars/day</small></h6>
-										<p class="">Building CO2 as cars + actual cars</p>
-									</div>
-									<div class="">
-										<div class="w-icon bg-warning">
-											<i class="bi bi-truck"></i>
-										</div>
-										<i class="bi bi-plus text-white"></i>
-										<div class="w-icon bg-warning">
-											<i class="bi bi-building"></i>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="widget widget-card-four mb-1" style="background-color: darkslategray;">
-							<div class="widget-content">
-								<div class="w-content">
-									<div class="w-info">
-										<h6 class="value">43120 <small>Ryal Qatary</small></h6>
-										<p class="">Total Energy Cost to Qatar Ryal</p>
-									</div>
-									<div class="">
-										<div class="w-icon bg-warning">
-											<i class="bi bi-cash-coin"></i>
+								<div class="widget widget-card-four mb-1" style="background-color: darkslategray;">
+									<div class="widget-content">
+										<div class="w-content">
+											<div class="w-info">
+												<h6 class="value">2450 <small>Cars/day</small></h6>
+												<p class="">Building CO2 as cars + actual cars</p>
+											</div>
+											<div class="">
+												<div class="w-icon bg-warning">
+													<i class="bi bi-truck"></i>
+												</div>
+												<i class="bi bi-plus text-white"></i>
+												<div class="w-icon bg-warning">
+													<i class="bi bi-building"></i>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-						</div>
-						<div class="widget-content widget-content-area mb-1">
-							<div id="chart-line-dotted" class=""></div>
-						</div>
-						<div class="widget-content widget-content-area mb-2">
-							<div id="chart-pie" class=""></div>
-						</div>
-					</div>
-					<div class="col-lg-9 px-1">
-						<div class="row mx-n1">
-							<div class="col-xl-9 col-lg-8 col-md-12 col-12 px-1">
-								<div class="widget-content widget-content-area mb-1">
-									<div class="table-scroll">
-										<table class="table table-borderless">
-											<tr>
-												<td>
-													Building 1
-												</td>
-												<td>
-													<p>Fault Type</p>
-													<ul class="nav fault-items">
-														<li class="text-danger">
-															Critical
-															<span>15</span>
-														</li>
-														<li class="text-warning">
-															Minor
-															<span>15</span>
-														</li>
-														<li class="text-success">
-															Normal
-															<span>15</span>
-														</li>
-													</ul>
-												</td>
-												<td>
-													<p>Building Capacity</p>
-													<div class="d-flex">
-														<span class="text-danger">Electr.</span>
-														<div class="progress mb-2 mx-2">
-															<div class="progress-bar bg-gradient-danger"
-																role="progressbar" style="width: 75%" aria-valuenow="75"
-																aria-valuemin="0" aria-valuemax="100"></div>
-														</div>
-														<span class="text-danger">75%</span>
-													</div>
-													<div class="d-flex">
-														<span class="text-primary">Cooling</span>
-														<div class="progress mb-2 mx-2">
-															<div class="progress-bar bg-gradient-primary"
-																role="progressbar" style="width: 57%" aria-valuenow="57"
-																aria-valuemin="0" aria-valuemax="100"></div>
-														</div>
-														<span class="text-primary">57%</span>
-													</div>
-												</td>
-												<td style="width: 250px; text-align: center;">
-													<div id="radial-chart-table" class="chart-in-table"></div>
-													<p class="mb-0 text-primary">Ocupancy Level</p>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													Building 2
-												</td>
-												<td>
-													<p>Fault Type</p>
-													<ul class="nav fault-items">
-														<li class="text-danger">
-															Critical
-															<span>15</span>
-														</li>
-														<li class="text-warning">
-															Minor
-															<span>15</span>
-														</li>
-														<li class="text-success">
-															Normal
-															<span>15</span>
-														</li>
-													</ul>
-												</td>
-												<td>
-													<p>Building Capacity</p>
-													<div class="d-flex">
-														<span class="text-danger">Electr.</span>
-														<div class="progress mb-2 mx-2">
-															<div class="progress-bar bg-gradient-danger"
-																role="progressbar" style="width: 75%" aria-valuenow="75"
-																aria-valuemin="0" aria-valuemax="100"></div>
-														</div>
-														<span class="text-danger">75%</span>
-													</div>
-													<div class="d-flex">
-														<span class="text-primary">Cooling</span>
-														<div class="progress mb-2 mx-2">
-															<div class="progress-bar bg-gradient-primary"
-																role="progressbar" style="width: 57%" aria-valuenow="57"
-																aria-valuemin="0" aria-valuemax="100"></div>
-														</div>
-														<span class="text-primary">57%</span>
-													</div>
-												</td>
-												<td style="width: 250px; text-align: center;">
-													<div id="radial-chart-table2" class="chart-in-table"></div>
-													<p class="mb-0 text-primary">Ocupancy Level</p>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													Building 3
-												</td>
-												<td>
-													<p>Fault Type</p>
-													<ul class="nav fault-items">
-														<li class="text-danger">
-															Critical
-															<span>15</span>
-														</li>
-														<li class="text-warning">
-															Minor
-															<span>15</span>
-														</li>
-														<li class="text-success">
-															Normal
-															<span>15</span>
-														</li>
-													</ul>
-												</td>
-												<td>
-													<p>Building Capacity</p>
-													<div class="d-flex">
-														<span class="text-danger">Electr.</span>
-														<div class="progress mb-2 mx-2">
-															<div class="progress-bar bg-gradient-danger"
-																role="progressbar" style="width: 75%" aria-valuenow="75"
-																aria-valuemin="0" aria-valuemax="100"></div>
-														</div>
-														<span class="text-danger">75%</span>
-													</div>
-													<div class="d-flex">
-														<span class="text-primary">Cooling</span>
-														<div class="progress mb-2 mx-2">
-															<div class="progress-bar bg-gradient-primary"
-																role="progressbar" style="width: 57%" aria-valuenow="57"
-																aria-valuemin="0" aria-valuemax="100"></div>
-														</div>
-														<span class="text-primary">57%</span>
-													</div>
-												</td>
-												<td style="width: 250px; text-align: center;">
-													<div id="radial-chart-table3" class="chart-in-table"></div>
-													<p class="mb-0 text-primary">Ocupancy Level</p>
-												</td>
-											</tr>
-										</table>
+								<div class="widget widget-card-four mb-1" style="background-color: darkslategray;">
+									<div class="widget-content">
+										<div class="w-content">
+											<div class="w-info">
+												<h6 class="value">43120 <small>Ryal Qatary</small></h6>
+												<p class="">Total Energy Cost to Qatar Ryal</p>
+											</div>
+											<div class="">
+												<div class="w-icon bg-warning">
+													<i class="bi bi-cash-coin"></i>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 								<div class="widget-content widget-content-area mb-1">
-									<div class="table-scroll">
-										<table class="table table-borderless">
-											<tr>
-												<td>
-													Booster Bump
-												</td>
-												<td>
-													<p>Run Time</p>
-													<b>2600 Hrs</b>
-												</td>
-												<td>
-													<p>Total Fault</p>
-													<b class="text-danger">6</b>
-												</td>
-												<td>
-													<p>Equipment Age</p>
-													<div class="d-flex">
-														<div class="progress mb-2">
-															<div class="progress-bar bg-gradient-primary"
-																role="progressbar" style="width: 57%" aria-valuenow="57"
-																aria-valuemin="0" aria-valuemax="100"></div>
-														</div>
-														<span class="text-success">57%</span>
-													</div>
-												</td>
-												<td style="width: 250px;">
-													<div id="radial-chart-table" class="chart-in-table"></div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													Booster Pumb
-												</td>
-												<td>
-													<p>Run Time</p>
-													<b>2600 Hrs</b>
-												</td>
-												<td>
-													<p>Total Fault</p>
-													<b class="text-danger">6</b>
-												</td>
-												<td>
-													<p>Equipment Age</p>
-													<div class="progress mb-2">
-														<div class="progress-bar bg-gradient-primary" role="progressbar"
-															style="width: 57%" aria-valuenow="57" aria-valuemin="0"
-															aria-valuemax="100"></div>
-													</div>
-												</td>
-												<td style="width: 250px;">
-													<div id="radial-chart-table2" class="chart-in-table"></div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													Booster Pumb
-												</td>
-												<td>
-													<p>Run Time</p>
-													<b>2600 Hrs</b>
-												</td>
-												<td>
-													<p>Total Fault</p>
-													<b class="text-danger">6</b>
-												</td>
-												<td>
-													<p>Building Capacity</p>
-													<div class="progress mb-2">
-														<div class="progress-bar bg-gradient-primary" role="progressbar"
-															style="width: 57%" aria-valuenow="57" aria-valuemin="0"
-															aria-valuemax="100"></div>
-													</div>
-												</td>
-												<td style="width: 250px;">
-													<div id="radial-chart-table3" class="chart-in-table"></div>
-												</td>
-											</tr>
-										</table>
-									</div>
-								</div>
-								<div class="widget-content widget-content-area mb-1">
-
-									<figure style="height: 435px;">
-										<!-- <img src="assets/img/map-city.jpg" alt="" class="img-fluid"
-											style="object-fit: cover; width: 100%; height: 100%; object-position: bottom;" /> -->
-											<video muted loop autoplay style="width: 100%; height: 100%; object-fit: fill;">
-												<source src="assets/videos/map-city1.mp4" type="video/mp4" />
-											</video>
-									</figure>
-									
-								</div>
-							</div>
-							<!-- <div class="col-xl-3 col-lg-4 col-md-4 col-sm-8 col-12">
-								
-							</div> -->
-
-							<div class="col-xl-3 col-lg-4 col-md-12 col-12 px-1">
-								<div class="widget-content widget-content-area mb-1">
-									<h5>EUI</h5>
-									<div id="chart-bar"></div>
-									<h5>CUI</h5>
-									<div id="chart-bar2"></div>
+									<div id="chart-line-dotted" class=""></div>
 								</div>
 								<div class="widget-content widget-content-area mb-2">
-									<div id="chart-optionsAreaGradiend" class=""></div>
+									<div id="chart-pie" class=""></div>
 								</div>
 							</div>
+							<div class="col-lg-9 px-1">
+								<div class="row mx-n1">
+									<div class="col-xl-9 col-lg-8 col-md-12 col-12 px-1">
+										<div class="widget-content widget-content-area mb-1">
+											<div class="table-scroll">
+												<table class="table table-borderless">
+													<tr>
+														<td>
+															Building 1
+														</td>
+														<td>
+															<p>Fault Type</p>
+															<ul class="nav fault-items">
+																<li class="text-danger">
+																	Critical
+																	<span>15</span>
+																</li>
+																<li class="text-warning">
+																	Minor
+																	<span>15</span>
+																</li>
+																<li class="text-success">
+																	Normal
+																	<span>15</span>
+																</li>
+															</ul>
+														</td>
+														<td>
+															<p>Building Capacity</p>
+															<div class="d-flex">
+																<span class="text-danger">Electr.</span>
+																<div class="progress mb-2 mx-2">
+																	<div class="progress-bar bg-gradient-danger"
+																		role="progressbar" style="width: 75%" aria-valuenow="75"
+																		aria-valuemin="0" aria-valuemax="100"></div>
+																</div>
+																<span class="text-danger">75%</span>
+															</div>
+															<div class="d-flex">
+																<span class="text-primary">Cooling</span>
+																<div class="progress mb-2 mx-2">
+																	<div class="progress-bar bg-gradient-primary"
+																		role="progressbar" style="width: 57%" aria-valuenow="57"
+																		aria-valuemin="0" aria-valuemax="100"></div>
+																</div>
+																<span class="text-primary">57%</span>
+															</div>
+														</td>
+														<td style="width: 250px; text-align: center;">
+															<div id="radial-chart-table" class="chart-in-table"></div>
+															<p class="mb-0 text-primary">Ocupancy Level</p>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															Building 2
+														</td>
+														<td>
+															<p>Fault Type</p>
+															<ul class="nav fault-items">
+																<li class="text-danger">
+																	Critical
+																	<span>15</span>
+																</li>
+																<li class="text-warning">
+																	Minor
+																	<span>15</span>
+																</li>
+																<li class="text-success">
+																	Normal
+																	<span>15</span>
+																</li>
+															</ul>
+														</td>
+														<td>
+															<p>Building Capacity</p>
+															<div class="d-flex">
+																<span class="text-danger">Electr.</span>
+																<div class="progress mb-2 mx-2">
+																	<div class="progress-bar bg-gradient-danger"
+																		role="progressbar" style="width: 75%" aria-valuenow="75"
+																		aria-valuemin="0" aria-valuemax="100"></div>
+																</div>
+																<span class="text-danger">75%</span>
+															</div>
+															<div class="d-flex">
+																<span class="text-primary">Cooling</span>
+																<div class="progress mb-2 mx-2">
+																	<div class="progress-bar bg-gradient-primary"
+																		role="progressbar" style="width: 57%" aria-valuenow="57"
+																		aria-valuemin="0" aria-valuemax="100"></div>
+																</div>
+																<span class="text-primary">57%</span>
+															</div>
+														</td>
+														<td style="width: 250px; text-align: center;">
+															<div id="radial-chart-table2" class="chart-in-table"></div>
+															<p class="mb-0 text-primary">Ocupancy Level</p>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															Building 3
+														</td>
+														<td>
+															<p>Fault Type</p>
+															<ul class="nav fault-items">
+																<li class="text-danger">
+																	Critical
+																	<span>15</span>
+																</li>
+																<li class="text-warning">
+																	Minor
+																	<span>15</span>
+																</li>
+																<li class="text-success">
+																	Normal
+																	<span>15</span>
+																</li>
+															</ul>
+														</td>
+														<td>
+															<p>Building Capacity</p>
+															<div class="d-flex">
+																<span class="text-danger">Electr.</span>
+																<div class="progress mb-2 mx-2">
+																	<div class="progress-bar bg-gradient-danger"
+																		role="progressbar" style="width: 75%" aria-valuenow="75"
+																		aria-valuemin="0" aria-valuemax="100"></div>
+																</div>
+																<span class="text-danger">75%</span>
+															</div>
+															<div class="d-flex">
+																<span class="text-primary">Cooling</span>
+																<div class="progress mb-2 mx-2">
+																	<div class="progress-bar bg-gradient-primary"
+																		role="progressbar" style="width: 57%" aria-valuenow="57"
+																		aria-valuemin="0" aria-valuemax="100"></div>
+																</div>
+																<span class="text-primary">57%</span>
+															</div>
+														</td>
+														<td style="width: 250px; text-align: center;">
+															<div id="radial-chart-table3" class="chart-in-table"></div>
+															<p class="mb-0 text-primary">Ocupancy Level</p>
+														</td>
+													</tr>
+												</table>
+											</div>
+										</div>
+										<div class="widget-content widget-content-area mb-1">
+											<div class="table-scroll">
+												<table class="table table-borderless">
+													<tr>
+														<td>
+															Booster Bump
+														</td>
+														<td>
+															<p>Run Time</p>
+															<b>2600 Hrs</b>
+														</td>
+														<td>
+															<p>Total Fault</p>
+															<b class="text-danger">6</b>
+														</td>
+														<td>
+															<p>Equipment Age</p>
+															<div class="d-flex">
+																<div class="progress mb-2">
+																	<div class="progress-bar bg-gradient-primary"
+																		role="progressbar" style="width: 57%" aria-valuenow="57"
+																		aria-valuemin="0" aria-valuemax="100"></div>
+																</div>
+																<span class="text-success">57%</span>
+															</div>
+														</td>
+														<td style="width: 250px;">
+															<div id="radial-chart-table" class="chart-in-table"></div>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															Booster Pumb
+														</td>
+														<td>
+															<p>Run Time</p>
+															<b>2600 Hrs</b>
+														</td>
+														<td>
+															<p>Total Fault</p>
+															<b class="text-danger">6</b>
+														</td>
+														<td>
+															<p>Equipment Age</p>
+															<div class="progress mb-2">
+																<div class="progress-bar bg-gradient-primary" role="progressbar"
+																	style="width: 57%" aria-valuenow="57" aria-valuemin="0"
+																	aria-valuemax="100"></div>
+															</div>
+														</td>
+														<td style="width: 250px;">
+															<div id="radial-chart-table2" class="chart-in-table"></div>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															Booster Pumb
+														</td>
+														<td>
+															<p>Run Time</p>
+															<b>2600 Hrs</b>
+														</td>
+														<td>
+															<p>Total Fault</p>
+															<b class="text-danger">6</b>
+														</td>
+														<td>
+															<p>Building Capacity</p>
+															<div class="progress mb-2">
+																<div class="progress-bar bg-gradient-primary" role="progressbar"
+																	style="width: 57%" aria-valuenow="57" aria-valuemin="0"
+																	aria-valuemax="100"></div>
+															</div>
+														</td>
+														<td style="width: 250px;">
+															<div id="radial-chart-table3" class="chart-in-table"></div>
+														</td>
+													</tr>
+												</table>
+											</div>
+										</div>
+										<div class="widget-content widget-content-area mb-1">
+
+											<figure style="height: 435px;">
+												<!-- <img src="assets/img/map-city.jpg" alt="" class="img-fluid"
+													style="object-fit: cover; width: 100%; height: 100%; object-position: bottom;" /> -->
+													<video muted loop autoplay style="width: 100%; height: 100%; object-fit: fill;">
+														<source src="assets/videos/map-city1.mp4" type="video/mp4" />
+													</video>
+											</figure>
+											
+										</div>
+									</div>
+									<!-- <div class="col-xl-3 col-lg-4 col-md-4 col-sm-8 col-12">
+										
+									</div> -->
+
+									<div class="col-xl-3 col-lg-4 col-md-12 col-12 px-1">
+										<div class="widget-content widget-content-area mb-1">
+											<h5>EUI</h5>
+											<div id="chart-bar"></div>
+											<h5>CUI</h5>
+											<div id="chart-bar2"></div>
+										</div>
+										<div class="widget-content widget-content-area mb-2">
+											<div id="chart-optionsAreaGradiend" class=""></div>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+
 
 						</div>
 
 					</div>
-
-
 				</div>
-
-			</div>
-		</div>
-		<!--  END CONTENT PART  -->
+				<!--  END CONTENT PART  -->
 			</div>
 		</div>
 
@@ -2172,39 +2172,74 @@
 			gate1: {
 				center: { lat: 25.3128508, lng: 51.4198203 },
 				population: 3,
-				content: '1'
+				gateNumber: 1,
+				totalTrees: 15,
+				totalCo2: 42,
+				numberOfCars: 41
 			},
 			gate2: {
 				center: { lat: 25.3179401, lng: 51.4323218 }, // 25.304739, 51.437747
 				population: 4,
+				gateNumber: 2,
+				totalTrees: 17,
+				totalCo2: 32,
+				numberOfCars: 410
 			},
 			gate3: {
 				center: { lat: 25.306671, lng: 51.4429973 }, // 25.304768, 51.437844 | 25.305672, 51.440114
 				population: 2,
+				gateNumber: 3,
+				totalTrees: 17,
+				totalCo2: 32,
+				numberOfCars: 410
 			},
 			gate4: {
 				center: { lat: 25.310974, lng: 51.4146363 }, // 25.305125, 51.438997 | 25.306412, 51.442542
 				population: 1,
+				gateNumber: 4,
+				totalTrees: 15,
+				totalCo2: 42,
+				numberOfCars: 41
 			},
 			gate5: {
 				center: { lat: 25.3135157, lng: 51.4468774 }, // 25.305811, 51.440817 | 25.306248, 51.445242
 				population: 1.2,
+				gateNumber: 5,
+				totalTrees: 176,
+				totalCo2: 72,
+				numberOfCars: 23
 			},
 			gate6: {
 				center: { lat: 25.3065476, lng: 51.4414101 }, // 25.3065476,51.4414101,17z
 				population: 1.2,
+				gateNumber: 6,
+				totalTrees: 15,
+				totalCo2: 42,
+				numberOfCars: 41
 			},
 			gate7: {
 				center: { lat: 25.3049791, lng: 51.4355327 }, // 25.3049791,51.4355327,17z
 				population: 1.2,
+				gateNumber: 7,
+				totalTrees: 125,
+				totalCo2: 482,
+				numberOfCars: 31
 			},
 			gate8: {
 				center: { lat: 25.3067083, lng: 51.4399744 }, // 25.3067083,51.4399744,17z
 				population: 1.2,
+				gateNumber: 8,
+				totalTrees: 15,
+				totalCo2: 42,
+				numberOfCars: 41
 			},
 			gate9: {
 				center: { lat: 25.3034035, lng: 51.4296717 }, // 25.311600, 51.440224 25.3034035,51.4296717,17z
 				population: 1.2,
+				gateNumber: 9,
+				totalTrees: 15,
+				totalCo2: 42,
+				numberOfCars: 41
 			},
 		};
 
@@ -2218,17 +2253,34 @@
 				// Note: We scale the area of the circle based on the population.
 				for (const city in citymap) {
 				// Add the circle for this city to the map.
-				const cityCircle = new google.maps.Circle({
-					strokeColor: "rgb(69, 118, 181)",
-					strokeOpacity: 0.8,
-					strokeWeight: 2,
-					fillColor: "rgb(69, 118, 181)",
-					fillOpacity: 0.55,
-					map,
-					center: citymap[city].center,
-					radius: Math.sqrt(citymap[city].population) * 100,
-				});
-			}
+					const cityCircle = new google.maps.Circle({
+						strokeColor: "rgb(69, 118, 181)",
+						strokeOpacity: 0.8,
+						strokeWeight: 2,
+						fillColor: "rgb(69, 118, 181)",
+						fillOpacity: 0.55,
+						map,
+						center: citymap[city].center,
+						radius: Math.sqrt(citymap[city].population) * 100,
+						gate: citymap[city],
+
+					});
+
+					google.maps.event.addListener(cityCircle, 'click', function(ev) {
+						console.log(cityCircle)
+						$('#GateInfo').fadeOut().delay(300).fadeIn();
+
+						setTimeout(() => {
+							/* totalTrees: 15,
+				totalCo2: 42,
+				numberOfCars: 41 */
+							$('#GateInfo h4 span').text(cityCircle.gate.gateNumber)
+							$('#GateInfo .total-trees strong').text(cityCircle.gate.totalTrees)
+							$('#GateInfo .total-co2 strong').text(cityCircle.gate.totalCo2)
+							$('#GateInfo .total-cars strong:first-of-type').text(cityCircle.gate.numberOfCars)
+						}, 300)
+					});
+				}
 		}
     
 		window.initMap = initMap;
