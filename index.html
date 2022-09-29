@@ -2308,10 +2308,14 @@
 							$('#GateInfo h4 span').text(cityCircle.gate.gateNumber)
 							$('#GateInfo .total-trees strong').text(cityCircle.gate.totalTrees)
 							$('#GateInfo .total-co2 strong').text(cityCircle.gate.totalCo2)
-							$('#GateInfo .total-cars strong.totalin').text(cityCircle.gate.numberOfCars)
-							$('#GateInfo .total-cars strong.totalOut').text(cityCircle.gate.numberOfCars)
-							$('#GateInfo .total-cars strong.carsin').text(cityCircle.gate.numberOfCars)
-							$('#GateInfo .total-cars strong.carsOut').text(cityCircle.gate.numberOfCars)
+							/* totalOfCarsIn: 18496,
+				totalOfCarsOut: 12518,
+				OfCarsOut: 1001,
+				OfCarsIn: 892, */
+							$('#GateInfo .total-cars strong.totalin').text(cityCircle.gate.totalOfCarsIn)
+							$('#GateInfo .total-cars strong.totalOut').text(cityCircle.gate.totalOfCarsOut)
+							$('#GateInfo .total-cars strong.carsin').text(cityCircle.gate.OfCarsOut)
+							$('#GateInfo .total-cars strong.carsOut').text(cityCircle.gate.OfCarsIn)
 						}, 300)
 					});
 				}
